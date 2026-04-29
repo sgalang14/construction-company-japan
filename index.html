@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>株式会社 千代田</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Noto+Serif+JP:wght@600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="logo" href="#" aria-label="株式会社 千代田">
+                <img src="images/logo.png" alt="株式会社 千代田" />
+            </a>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="メニューを開く"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="nav" aria-label="メインナビゲーション">
+                <button class="close-menu" id="close-menu" aria-label="メニューを閉じる"></button>
+                <a href="#">HOME</a>
+                <a href="#service">事業内容</a>
+                <a href="#construction">施⼯実績</a>
+                <a href="#company">会社情報</a>
+                <a href="#recruit">採⽤情報</a>
+                <a class="nav-contact" href="#contact">お問い合わせ</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" aria-label="メインビジュアル">
+                <div class="hero-copy">
+                    <h1>今日も明日も、<br />変わらぬ信頼で守り続ける</h1>
+                </div>
+            </section>
+
+            <section class="about section-white" id="company">
+                <div class="about-grid">
+                    <div class="about-photo reveal-left">
+                        <img
+                            src="images/about-worker-photo-edited.png"
+                            alt="天井付近を施工する作業員"
+                        />
+                    </div>
+                    <div class="section-copy reveal-right">
+                        <img src="images/wheelbarrow-icon.png" class="section-icon" alt="icon" />
+
+                        <span class="eyebrow">About us</span>
+                        <h2>確かな技術と信頼で、<br />一歩先ゆく施工を</h2>
+                        <p>
+                            株式会社千代⽥は、信頼される施⼯技術と丁寧な対応で、お客様の理想を
+                            形にする建設のパートナーです。私たちは、少⼈数ならではの機動⼒を活
+                            かし、迅速かつ柔軟に対応します。
+                        </p>
+                        <p class="accent-text">
+                            技術へのこだわりと豊富な経験で、どんなプロジェクトでも⾼品質な仕上
+                            がりをお約束します。
+                        </p>
+                        <p>
+                            「地域の皆様とともに成⻑し、信頼され続ける企業
+                            でありたい」それが私たちの願いです。
+                        </p>
+                        <a href="#" class="pill-button teal">千代田について<span>→</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services" id="service">
+                <div class="section-title">
+                    <img src="images/paint-brush-icon.png" class="brush-icon" alt="icon" />
+                    <div class="content-title">
+                        <div class="eyebrow-line">Contents</div>
+                        <img src="images/dashed-divider.svg" />
+                    </div>
+                    <h2>事業内容</h2>
+                </div>
+                <div class="container service-cards">
+                    <article class="service-card reveal-up">
+                        <div class="service-num">
+                            <span>01</span>
+                        </div>
+                        <a class="card-arrow" href="#" aria-label="建築内装施工の詳細">→</a>
+                        <h3>建築内装施工</h3>
+                        <img src="images/service-construction-photo.png" alt="内装施工現場" />
+                        <div class="service-card-copy">
+                            <p>
+                                建物の基本的な内外装⼯事や防⽔⼯事をはじめ、耐⽕・断熱⼯事なども⼿がけています。
+                            </p>
+                        </div>
+                    </article>
+                    <article class="service-card reveal-up">
+                        <div class="service-num">
+                            <span>02</span>
+                        </div>
+                        <a class="card-arrow" href="#" aria-label="スポーツ設備・施設施工の詳細"
+                            >→</a
+                        >
+                        <h3>スポーツ設備・施設施⼯</h3>
+                        <img
+                            src="images/service-sports-facility-photo.png"
+                            alt="体育館の木造天井"
+                        />
+                        <div class="service-card-copy">
+                            <p>
+                                スポーツ施設や公共施設に必要な設備の設置。スポーツ⽤床材やフローリング⼯事、トイレブースなどを取り扱います。
+                            </p>
+                        </div>
+                    </article>
+                    <article class="service-card reveal-up">
+                        <div class="service-num">
+                            <span>03</span>
+                        </div>
+                        <a class="card-arrow" href="#" aria-label="建築資材の販売の詳細">→</a>
+                        <h3>建築資材の販売</h3>
+                        <img src="images/service-materials-photo.png" alt="資材が並ぶ倉庫" />
+                        <div class="service-card-copy">
+                            <p>
+                                メーカーの代理店として、製品の販売だけでなく、関連する⼯事⼀式も請け負っております。
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="cad" id="construction">
+                <div class="container cad-panel reveal-up">
+                    <img src="images/cad-blueprint-photo-edited-01.png" alt="CAD図面と施工道具" />
+                    <div class="cad-copy">
+                        <h2><span>CAD図</span>⾯から施⼯まで、<br />⼀貫対応できる確かな技術⼒</h2>
+                        <p>
+                            ⾃社で施⼯前図⾯を作成し、業者仕様や現場状況に合わせた調整・修正ま
+                            で柔軟に対応しています。図⾯を「読める・描ける・直せる」体制によ
+                            り、追加⼯事や変更にもスムーズに対応し、安定した品質の施⼯を実現し
+                            ています。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feature">
+                <div class="feature-title">
+                    <span class="eyebrow-line">Feature</span>
+                    <h2>自然素材でつくる。<br />温かく静かな住まい</h2>
+                    <img src="images/decorative-shape-service.svg" class="line-icon" alt="icon" />
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-copy reveal-left">
+                        <h3>セルローズファイバー断熱・防⾳⼯事</h3>
+                        <p>
+                            セルローズファイバー断熱防⾳⼯事は、環境に優しい⾃然素材を使い、優れた断熱性能と防⾳効果を発揮します。
+                        </p>
+                        <p class="accent-text">
+                            室内の温度差や⽣活⾳の悩みを軽減し、より快適で⼼地よい住空間を実現します。
+                        </p>
+                        <a href="#" class="pill-button teal float-right"
+                            >詳しく⾒る<span>→</span></a
+                        >
+                    </div>
+                    <div class="feature-photo reveal-right">
+                        <img src="images/feature-worker-photo.png" alt="断熱施工をする作業員" />
+                    </div>
+                </div>
+            </section>
+
+            <div class="recruit-bg">
+                <section class="recruit" id="recruit">
+                    <div class="recruit-card reveal-up">
+                        <div class="recruit-border">
+                            <span class="eyebrow-line">Recruit</span>
+                            <div>
+                                <h2>採⽤情報 <span>安⼼と信頼のキャリア</span></h2>
+                            </div>
+                            <p>
+                                公共事業を通じて地域を⽀えながら、安⼼して成⻑できる環境を整えていき
+                                ます。経験に関わらず、⼀⼈ひとりが⼒を発揮できる職場です。
+                                ここで、あなたの新しいキャリアを始めてみませんか。
+                            </p>
+                            <a href="#" class="pill-button gold">詳しく⾒る<span>→</span></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="news-bg">
+                <section class="news">
+                    <div class="section-title">
+                        <span class="eyebrow-line">News</span>
+                        <h2>お知らせ</h2>
+                    </div>
+                    <div class="container news-list">
+                        <article class="news-card reveal-up">
+                            <div class="news-detail">
+                                <time>2026.XX.XX</time>
+                                <p>ホームページを開設しました</p>
+                                ホームページを開設しました
+                            </div>
+                        </article>
+                        <article class="news-card reveal-up">
+                            <div class="news-detail">
+                                <time>2026.XX.XX</time>
+                                <p>施⼯事例を掲載しました</p>
+                                施⼯事例を掲載しました
+                            </div>
+                        </article>
+                        <article class="news-card reveal-up">
+                            <div class="news-detail">
+                                <time>2026.XX.XX</time>
+                                <p>施⼯事例を掲載しました</p>
+                                施⼯事例を掲載しました
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container news-more">
+                        <a href="#" class="pill-button gold">お知らせ⼀覧へ<span>→</span></a>
+                    </div>
+                </section>
+            </div>
+
+            <section class="contact-band" id="contact">
+                <div class="container contact-grid">
+                    <div>
+                        <h2>お問い合わせ</h2>
+                        <span>Contact</span>
+                        <p>
+                            ご質問などがありましたら、お電話・お問い合わせフォームよりお気軽にご連絡ください。
+                        </p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="tel:0234282110">0234-28-2110</a>
+                        <a href="#">メールフォームでお問い合わせ</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <img class="footer-logo" src="images/logo.png" alt="株式会社 千代田" />
+                    <p>
+                        〒998-0125<br />山形県酒田市広野字末広102-2<br />TEL 0234-28-2110 / FAX
+                        0234-28-2112
+                    </p>
+                </div>
+                <nav class="footer-nav" aria-label="フッターナビゲーション">
+                    <a href="#">HOME</a>
+                    <a href="#service">事業内容</a>
+                    <a href="#construction">施工実績</a>
+                    <a href="#company">会社情報</a>
+                    <a href="#recruit">採用情報</a>
+                    <a href="#contact">お問い合わせ</a>
+                </nav>
+            </div>
+            <p class="copyright">Copyright© 株式会社千代田 All Right Reserved.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
