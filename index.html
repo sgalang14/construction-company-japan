@@ -233,12 +233,36 @@
                         <h2>お問い合わせ</h2>
                         <span>Contact</span>
                         <p>
-                            ご質問などがありましたら、お電話・お問い合わせフォームよりお気軽にご連絡ください。
+                            ご質問などありましたら、お電話・<br />
+                            お問い合わせフォームより受け付けております。
                         </p>
                     </div>
                     <div class="contact-actions">
-                        <a href="tel:0234282110">0234-28-2110</a>
-                        <a href="#">メールフォームでお問い合わせ</a>
+                        <!-- PHONE -->
+                        <a href="tel:0234282110" class="contact-item">
+                            <div class="icon-circle">
+                                <img src="images/phone-icon.svg" alt="phone icon" />
+                            </div>
+
+                            <div class="contact-text">
+                                <p class="label">お電話でのお問い合わせ</p>
+                                <h3 class="number">0234-28-2110</h3>
+                                <div class="hours">受付時間：⽉〜⾦／8:00〜17:00</div>
+                            </div>
+
+                            <div class="arrow">→</div>
+                        </a>
+
+                        <!-- EMAIL -->
+                        <a href="#" class="contact-item">
+                            <div class="icon-circle">
+                                <img src="images/mail-icon.svg" alt="mail icon" />
+                            </div>
+
+                            <div class="contact-text">
+                                <p class="label">メールフォームでのお問い合わせ</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -247,24 +271,37 @@
         <footer class="site-footer">
             <div class="container footer-grid">
                 <div>
-                    <img class="footer-logo" src="images/logo.png" alt="株式会社 千代田" />
+                    <img class="footer-logo" src="images/company-logo.png" alt="株式会社 千代田" />
                     <p>
                         〒998-0125<br />山形県酒田市広野字末広102-2<br />TEL 0234-28-2110 / FAX
                         0234-28-2112
                     </p>
+
+                    <div class="bottom-text">お知らせ &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 個⼈情報保護⽅針</div>
                 </div>
                 <nav class="footer-nav" aria-label="フッターナビゲーション">
-                    <a href="#">HOME</a>
-                    <a href="#service">事業内容</a>
-                    <a href="#construction">施工実績</a>
-                    <a href="#company">会社情報</a>
-                    <a href="#recruit">採用情報</a>
-                    <a href="#contact">お問い合わせ</a>
+                    <div class="footer-col">
+                        <a href="#">HOME</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <a href="#service">事業内容</a>
+                        <ul>
+                            <li><a href="#">建築現場施工</a></li>
+                            <li><a href="#">スポーツ設備・施設施工</a></li>
+                            <li><a href="#">建築資材の販売</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col footer-col-right">
+                        <a href="#construction">施工実績</a>
+                        <a href="#company">会社情報</a>
+                        <a href="#recruit">採用情報</a>
+                    </div>
                 </nav>
             </div>
-            <p class="copyright">Copyright© 株式会社千代田 All Right Reserved.</p>
+            <p class="copyright">Copyright© 株式会社千代⽥ Alｌ Right Reserved.</p>
         </footer>
-
         <script src="js/script.js"></script>
     </body>
 </html>
