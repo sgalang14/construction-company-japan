@@ -10,6 +10,974 @@
     --white: #fff;
 }
 
+/* Project detail page */
+.project-detail-page {
+    background: #fff;
+    color: #123d48;
+}
+
+.project-detail-page .site-header {
+    height: 75px;
+}
+
+.projects-hero-bg {
+    background-color: #fff0d8;
+}
+
+.project-detail-hero {
+    align-items: center;
+    background: url("../images/projects-hero.png") center bottom / cover no-repeat;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-top: 75px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.project-detail-hero-copy {
+    position: relative;
+    transform: translateY(-20px);
+    z-index: 1;
+}
+
+.project-detail-hero h1 {
+    color: #fff700;
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(48px, 4.8vw, 84px);
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    line-height: 1.1;
+    text-indent: 0.18em;
+}
+
+.project-detail-hero p {
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(20px, 2vw, 34px);
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    margin-top: 26px;
+}
+
+.project-detail-body {
+    padding: 50px 0 170px;
+}
+
+.project-detail-heading {
+    align-items: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 250px 1fr;
+    margin: 0 auto 88px;
+    max-width: 1540px;
+}
+
+.project-detail-heading span {
+    background: #fff;
+    border-radius: 999px;
+    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.18);
+    color: var(--gold-deep);
+    display: inline-flex;
+    font-family:
+        "Noto Sans JP",
+        sans serif;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    padding: 12px 25px;
+    width: fit-content;
+}
+
+.project-detail-heading h2 {
+    color: var(--teal);
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(30px, 2vw, 62px);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.project-detail-main {
+    align-items: center;
+    display: grid;
+    gap: 45px;
+    grid-template-columns: 1.12fr 1fr;
+    margin-bottom: 40px;
+}
+
+.project-main-image img {
+    aspect-ratio: 1.42 / 1;
+    border-radius: 28px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-spec {
+    background: #8dd1e3;
+    border-radius: 32px;
+    color: #1a3263;
+    padding: 58px 60px;
+}
+
+.project-spec div {
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.72);
+    display: grid;
+    gap: 52px;
+    grid-template-columns: 170px 1fr;
+    min-height: 74px;
+}
+
+.project-spec dt {
+    font-size: 16px;
+    font-weight: 600;.complete-panel h2
+    line-height: 1.5;
+    letter-spacing: 15px;
+}
+
+.project-spec dd {
+    font-weight: 400;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.project-gallery {
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-gallery img {
+    aspect-ratio: 1.36 / 1;
+    border-radius: 22px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-detail-contact {
+    background:
+        linear-gradient(rgba(20, 164, 190, 0.8), rgba(20, 164, 190, 0.86)),
+        url("../images/workers-construction-photo.png") center / cover no-repeat;
+    color: #fff;
+    min-height: 520px;
+    overflow: hidden;
+    padding: 86px 0 150px;
+    position: relative;
+}
+
+.project-detail-contact::after {
+    background: radial-gradient(
+        130% 82% at 30% 0,
+        transparent 60%,
+        var(--gold) 61% 70%,
+        transparent 71%
+    );
+    bottom: -10px;
+    height: 102px;
+}
+
+.project-detail-contact-grid {
+    align-items: center;
+    display: grid;
+    gap: 120px;
+    grid-template-columns: 1fr 0.82fr;
+    position: relative;
+    z-index: 1;
+}
+
+.project-detail-contact h2 {
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.project-detail-contact span {
+    align-items: center;
+    color: #fff;
+    display: inline-flex;
+    font-family: "Noto Serif JP", serif;
+    font-size: 17px;
+    gap: 12px;
+    margin: 12px 0 102px;
+}
+
+.project-detail-contact span::before,
+.project-detail-contact span::after {
+    background: #fff;
+    content: "";
+    height: 1px;
+    width: 22px;
+}
+
+.project-detail-contact p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+    max-width: 470px;
+}
+
+.project-detail-contact-actions {
+    display: grid;
+    gap: 52px;
+}
+
+.project-detail-contact-actions a {
+    color: #fff;
+    display: grid;
+    gap: 6px;
+    padding-left: 62px;
+    position: relative;
+}
+
+.project-detail-contact-actions a::before {
+    align-items: center;
+    background: var(--gold);
+    border-radius: 50%;
+    color: #fff;
+    content: "";
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    height: 46px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 46px;
+}
+
+.project-detail-contact-actions .phone-link::before {
+    content: "☎";
+}
+
+.project-detail-contact-actions .mail-link::before {
+    content: "✉";
+}
+
+.project-detail-contact-actions small {
+    font-size: 15px;
+    font-weight: 900;
+    opacity: 0.88;
+}
+
+.project-detail-contact-actions strong {
+    font-family: "Noto Serif JP", serif;
+    font-size: 37px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+}
+
+.project-detail-contact-actions em {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.project-detail-footer {
+    background: var(--gold);
+    color: #123d48;
+    padding: 96px 0 44px;
+}
+
+.project-detail-footer-grid {
+    display: grid;
+    gap: 150px;
+    grid-template-columns: 1fr 0.95fr;
+}
+
+.project-detail-footer-logo {
+    height: 42px;
+    margin-bottom: 24px;
+    width: auto;
+}
+
+.project-detail-footer p,
+.project-detail-footer a {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.9;
+}
+
+.project-detail-footer-small {
+    display: flex;
+    gap: 38px;
+    margin-top: 64px;
+}
+
+.project-detail-footer-small a + a {
+    border-left: 1px solid rgba(18, 61, 72, 0.7);
+    padding-left: 38px;
+}
+
+.project-detail-footer-nav {
+    display: grid;
+    gap: 88px;
+    grid-template-columns: 0.8fr 1.4fr 1fr;
+    justify-self: end;
+    padding-top: 40px;
+}
+
+.project-detail-footer-nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.project-detail-footer-nav a {
+    font-family: "Noto Serif JP", serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.project-detail-footer-nav ul {
+    display: grid;
+    gap: 8px;
+    list-style: none;
+}
+
+.project-detail-footer-nav ul a {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.project-detail-copyright {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 92px;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .project-detail-heading {
+        gap: 44px;
+        grid-template-columns: 240px 1fr;
+    }
+
+    .project-detail-main {
+        gap: 42px;
+    }
+
+    .project-spec {
+        padding: 50px;
+    }
+
+    .project-detail-contact-grid,
+    .project-detail-footer-grid {
+        gap: 70px;
+    }
+
+    .project-detail-footer-nav {
+        gap: 44px;
+    }
+}
+
+@media (max-width: 900px) {
+    .project-detail-hero {
+        height: 520px;
+    }
+
+    .project-detail-heading,
+    .project-detail-main,
+    .project-detail-contact-grid,
+    .project-detail-footer-grid,
+    .project-detail-footer-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .project-detail-heading {
+        gap: 30px;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .project-detail-footer-nav {
+        justify-self: start;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .project-detail-page .site-header {
+        height: 62px;
+    }
+
+    .project-detail-hero {
+        height: 430px;
+        margin-top: 62px;
+    }
+
+    .project-detail-hero::after {
+        height: 88px;
+    }
+
+    .project-detail-hero h1 {
+        font-size: 38px;
+    }
+
+    .project-detail-hero p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .project-detail-body {
+        padding: 70px 0 100px;
+    }
+
+    .project-detail-heading span {
+        font-size: 14px;
+        padding: 14px 24px;
+        width: fit-content;
+    }
+
+    .project-detail-heading h2 {
+        font-size: 29px;
+    }
+
+    .project-spec {
+        border-radius: 22px;
+        padding: 28px 24px;
+    }
+
+    .project-spec div {
+        gap: 14px;
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 22px 0;
+    }
+
+    .project-spec dt,
+    .project-spec dd {
+        font-size: 17px;
+    }
+
+    .project-detail-contact {
+        min-height: auto;
+        padding: 68px 0 112px;
+    }
+
+    .project-detail-contact span {
+        margin-bottom: 52px;
+    }
+
+    .project-detail-contact-actions strong {
+        font-size: 27px;
+    }
+
+    .project-detail-contact-actions a {
+        padding-left: 52px;
+    }
+
+    .project-detail-contact-actions a::before {
+        height: 38px;
+        width: 38px;
+    }
+
+    .project-detail-footer {
+        padding-top: 70px;
+    }
+
+    .project-detail-footer-grid {
+        gap: 56px;
+    }
+
+    .project-detail-footer-small {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .project-detail-footer-small a + a {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .project-detail-footer-nav div {
+        gap: 14px;
+    }
+}
+
+/* Projects listing page */
+.projects-page {
+    background: #fff;
+    color: #123d48;
+}
+
+.projects-page .site-header {
+    height: 75px;
+}
+
+.projects-hero {
+    align-items: center;
+    background:
+        linear-gradient(rgba(40, 172, 194, 0.45), rgba(40, 172, 194, 0.7)),
+        url("../images/projects-hero.png") center / cover no-repeat;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    margin-top: 75px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.projects-hero-copy {
+    position: relative;
+    transform: translateY(-20px);
+    z-index: 1;
+}
+
+.projects-index {
+    padding: 86px 0 170px;
+}
+
+.projects-tabs {
+    align-items: center;
+    display: flex;
+    gap: clamp(60px, 9vw, 170px);
+    justify-content: center;
+    margin: 0 auto 142px;
+    padding: 0 24px;
+}
+
+.projects-tabs a {
+    color: var(--teal);
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(20px, 2vw, 34px);
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+}
+
+.projects-tabs a::after {
+    background: var(--gold);
+    border-radius: 50%;
+    bottom: -26px;
+    content: "";
+    height: 20px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 116px 74px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 1460px;
+}
+
+.project-card {
+    min-width: 0;
+}
+
+.project-image {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.project-image img {
+    aspect-ratio: 1.16 / 1;
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-image span {
+    background: var(--gold);
+    color: var(--teal);
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: center;
+    min-width: 160px;
+    padding: 9px 18px;
+    position: absolute;
+    right: 26px;
+    top: 22px;
+}
+
+.project-meta {
+    align-items: center;
+    color: var(--gold);
+    display: flex;
+    font-family: "Noto Serif JP", serif;
+    font-size: 14px;
+    font-weight: 900;
+    gap: 18px;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.project-meta time::after {
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin: 0 0 4px 20px;
+    width: 70px;
+}
+
+.project-card h2 {
+    color: var(--teal);
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(30px, 2.5vw, 48px);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.project-card p {
+    color: #333;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.project-meta {
+    font-family: "Noto Sans JP";
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffa310;
+}
+
+.projects-contact {
+    background:
+        linear-gradient(rgba(20, 164, 190, 0.8), rgba(20, 164, 190, 0.86)),
+        url("../images/workers-construction-photo.png") center / cover no-repeat;
+    color: #fff;
+    min-height: 520px;
+    overflow: hidden;
+    padding: 86px 0 150px;
+    position: relative;
+}
+
+.projects-contact::after {
+    background: radial-gradient(
+        130% 82% at 30% 0,
+        transparent 60%,
+        var(--gold) 61% 70%,
+        transparent 71%
+    );
+    bottom: -10px;
+    height: 102px;
+}
+
+.projects-contact-grid {
+    align-items: center;
+    display: grid;
+    gap: 120px;
+    grid-template-columns: 1fr 0.82fr;
+    position: relative;
+    z-index: 1;
+}
+
+.projects-contact h2 {
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.projects-contact span {
+    align-items: center;
+    color: #fff;
+    display: inline-flex;
+    font-family: "Noto Serif JP", serif;
+    font-size: 17px;
+    gap: 12px;
+    margin: 12px 0 102px;
+}
+
+.projects-contact span::before,
+.projects-contact span::after {
+    background: #fff;
+    content: "";
+    height: 1px;
+    width: 22px;
+}
+
+.projects-contact p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+    max-width: 470px;
+}
+
+.projects-contact-actions {
+    display: grid;
+    gap: 52px;
+}
+
+.projects-contact-actions a {
+    color: #fff;
+    display: grid;
+    gap: 6px;
+    padding-left: 62px;
+    position: relative;
+}
+
+.projects-contact-actions a::before {
+    align-items: center;
+    background: var(--gold);
+    border-radius: 50%;
+    color: #fff;
+    content: "";
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    height: 46px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 46px;
+}
+
+.projects-contact-actions .phone-link::before {
+    content: "☎";
+}
+
+.projects-contact-actions .mail-link::before {
+    content: "✉";
+}
+
+.projects-contact-actions small {
+    font-size: 15px;
+    font-weight: 900;
+    opacity: 0.88;
+}
+
+.projects-contact-actions strong {
+    font-family: "Noto Serif JP", serif;
+    font-size: 37px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+}
+
+.projects-contact-actions em {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.projects-footer {
+    background: var(--gold);
+    color: #123d48;
+    padding: 96px 0 44px;
+}
+
+.projects-footer-grid {
+    display: grid;
+    gap: 150px;
+    grid-template-columns: 1fr 0.95fr;
+}
+
+.projects-footer-logo {
+    height: 42px;
+    margin-bottom: 24px;
+    width: auto;
+}
+
+.projects-footer p,
+.projects-footer a {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.9;
+}
+
+.projects-footer-small {
+    display: flex;
+    gap: 38px;
+    margin-top: 64px;
+}
+
+.projects-footer-small a + a {
+    border-left: 1px solid rgba(18, 61, 72, 0.7);
+    padding-left: 38px;
+}
+
+.projects-footer-nav {
+    display: grid;
+    gap: 88px;
+    grid-template-columns: 0.8fr 1.4fr 1fr;
+    justify-self: end;
+    padding-top: 40px;
+}
+
+.projects-footer-nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.projects-footer-nav a {
+    font-family: "Noto Serif JP", serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.projects-footer-nav ul {
+    display: grid;
+    gap: 8px;
+    list-style: none;
+}
+
+.projects-footer-nav ul a {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.projects-copyright {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 92px;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .projects-grid {
+        gap: 82px 44px;
+    }
+
+    .projects-contact-grid,
+    .projects-footer-grid {
+        gap: 70px;
+    }
+
+    .projects-footer-nav {
+        gap: 44px;
+    }
+}
+
+@media (max-width: 900px) {
+    .projects-hero {
+        height: 520px;
+    }
+
+    .projects-tabs {
+        align-items: center;
+        flex-direction: column;
+        gap: 44px;
+        margin-bottom: 90px;
+    }
+
+    .projects-grid,
+    .projects-contact-grid,
+    .projects-footer-grid,
+    .projects-footer-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        max-width: 580px;
+    }
+
+    .projects-footer-nav {
+        justify-self: start;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .projects-page .site-header {
+        height: 62px;
+    }
+
+    .projects-hero {
+        height: 430px;
+        margin-top: 62px;
+    }
+
+    .projects-hero::after {
+        height: 88px;
+    }
+
+    .projects-hero h1 {
+        font-size: 38px;
+    }
+
+    .projects-hero p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .projects-index {
+        padding: 62px 0 110px;
+    }
+
+    .projects-tabs a {
+        font-size: 22px;
+    }
+
+    .project-image span {
+        font-size: 12px;
+        min-width: 128px;
+        right: 14px;
+        top: 14px;
+    }
+
+    .project-card h2 {
+        font-size: 29px;
+    }
+
+    .projects-contact {
+        min-height: auto;
+        padding: 68px 0 112px;
+    }
+
+    .projects-contact span {
+        margin-bottom: 52px;
+    }
+
+    .projects-contact-actions strong {
+        font-size: 27px;
+    }
+
+    .projects-contact-actions a {
+        padding-left: 52px;
+    }
+
+    .projects-contact-actions a::before {
+        height: 38px;
+        width: 38px;
+    }
+
+    .projects-footer {
+        padding-top: 70px;
+    }
+
+    .projects-footer-grid {
+        gap: 56px;
+    }
+
+    .projects-footer-small {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .projects-footer-small a + a {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .projects-footer-nav div {
+        gap: 14px;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -2903,7 +3871,8 @@ h2 {
     z-index: 1;
 }
 
-.construction-lead {
+.construction-lead,
+.service-banner {
     background: #fff0d8;
     padding: 66px 0 98px;
     position: relative;
@@ -3445,7 +4414,8 @@ h2 {
         padding: 0 20px;
     }
 
-    .construction-lead {
+    .construction-lead,
+    .service-banner {
         padding: 52px 0 72px;
     }
 
@@ -3554,7 +4524,7 @@ h2 {
 }
 
 .complete-body {
-    padding: 112px 34px 250px;
+    padding: 112px 34px 200px;
     text-align: center;
 }
 
@@ -3563,17 +4533,17 @@ h2 {
     box-shadow: 0 14px 28px rgba(35, 35, 35, 0.18);
     color: #fff;
     margin: 0 auto;
-    max-width: 1465px;
-    min-height: 530px;
-    padding: 86px 100px 76px;
+    max-width: 1100px;
+    min-height: 420px;
+    padding: 50px 100px 50px;
     text-align: left;
 }
 
 .complete-panel h2 {
-    color: #fff;
+        color: #fff;
     font-family: "Noto Serif JP", serif;
-    font-size: clamp(28px, 2.1vw, 42px);
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 700;
     line-height: 1.4;
     margin-bottom: 78px;
     text-align: center;
@@ -3581,11 +4551,11 @@ h2 {
 
 .complete-panel p {
     color: #fff;
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 300;
     line-height: 1.85;
-    margin: 0 auto 74px;
-    max-width: 1120px;
+    margin: 0 auto 50px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .complete-panel p:last-child {
@@ -3593,19 +4563,18 @@ h2 {
 }
 
 .complete-button {
-    align-items: center;
+        align-items: center;
     background: var(--teal);
     border-radius: 999px;
     color: #fff;
     display: inline-flex;
-    font-family: "Noto Serif JP", serif;
-    font-size: 40px;
-    font-weight: 900;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
     gap: 42px;
     justify-content: center;
-    margin-top: 128px;
-    min-width: 510px;
-    padding: 22px 28px 22px 70px;
+    margin-top: 70px;
+    padding: 15px 15px 14px 60px;
 }
 
 .complete-button span {
@@ -3615,10 +4584,10 @@ h2 {
     color: var(--teal);
     display: inline-flex;
     font-family: "Noto Sans JP", sans-serif;
-    height: 82px;
+    height: 50px;
     justify-content: center;
     line-height: 1;
-    width: 82px;
+    width: 50px;
 }
 
 .complete-contact {
@@ -3993,6 +4962,18 @@ h2 {
 .sports-hero {
     align-items: center;
     background: url(../images/service-sports-detail-2.png) center bottom / cover no-repeat;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-top: 75px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.materials-hero {
+    align-items: center;
+    background: url(../images/service-materials-detail-bg.png) center bottom / cover no-repeat;
     display: flex;
     height: 500px;
     justify-content: center;
@@ -4532,7 +5513,8 @@ h2 {
 }
 
 @media (max-width: 900px) {
-    .sports-hero {
+    .sports-hero,
+    .materials-hero {
         height: 520px;
     }
 
@@ -4583,20 +5565,24 @@ h2 {
         height: 62px;
     }
 
-    .sports-hero {
+    .sports-hero,
+    .materials-hero {
         height: 430px;
         margin-top: 62px;
     }
 
-    .sports-hero::after {
+    .sports-hero::after,
+    .materials-hero::after {
         height: 88px;
     }
 
-    .sports-hero h1 {
+    .sports-hero h1,
+    .materials-hero h1 {
         font-size: 38px;
     }
 
-    .sports-hero p {
+    .sports-hero p,
+    .materials-hero p {
         font-size: 15px;
         padding: 0 20px;
     }
