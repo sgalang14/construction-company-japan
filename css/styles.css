@@ -2020,7 +2020,7 @@ h2 {
 
 .news-index-item {
     align-items: center;
-    border-bottom: 2px solid #89D1E3;
+    border-bottom: 2px solid #89d1e3;
     color: var(--teal);
     display: grid;
     font-family: "Noto Sans JP", serif;
@@ -2032,7 +2032,7 @@ h2 {
 }
 
 .news-index-item::before {
-    background: #89D1E3;
+    background: #89d1e3;
     bottom: -2px;
     content: "";
     height: 8px;
@@ -2408,41 +2408,14 @@ h2 {
 
 .detail-hero {
     align-items: center;
-    background:
-        linear-gradient(rgba(40, 172, 194, 0.38), rgba(40, 172, 194, 0.66)),
-        url("../images/news-detail-hero.png") center / cover no-repeat;
+    background: url(../images/news-detail-hero.png) center bottom / cover no-repeat;
     display: flex;
-    height: 638px;
+    height: 500px;
     justify-content: center;
     margin-top: 75px;
     overflow: hidden;
     position: relative;
     text-align: center;
-}
-
-.detail-hero::before {
-    background: rgba(255, 255, 255, 0.12);
-    content: "";
-    inset: 0;
-    position: absolute;
-}
-
-.detail-hero::after,
-.detail-contact::after {
-    content: "";
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-}
-
-.detail-hero::after {
-    background:
-        radial-gradient(145% 84% at 27% 0, transparent 61%, var(--gold) 62% 68%, transparent 69%),
-        radial-gradient(126% 83% at 78% 0, transparent 62%, var(--teal) 63% 69%, transparent 70%),
-        #fff;
-    bottom: -1px;
-    height: 138px;
 }
 
 .detail-hero-copy {
@@ -2451,47 +2424,25 @@ h2 {
     z-index: 1;
 }
 
-.detail-hero h1 {
-    color: #fff700;
-    font-family: "Noto Serif JP", serif;
-    font-size: clamp(50px, 5.5vw, 92px);
-    font-weight: 900;
-    letter-spacing: 0.18em;
-    line-height: 1.1;
-    text-indent: 0.18em;
-    text-shadow: 0 4px 10px rgba(35, 82, 88, 0.24);
-}
-
-.detail-hero p {
-    color: #fff;
-    font-family: "Noto Serif JP", serif;
-    font-size: clamp(20px, 2.1vw, 34px);
-    font-weight: 900;
-    letter-spacing: 0.04em;
-    margin-top: 28px;
-}
-
 .detail-body {
-    padding: 250px 34px 270px;
+    padding: 200px 34px 270px;
 }
 
 .detail-card {
     background: #e5f4f7;
     border-radius: 28px 28px 0 0;
     margin: 0 auto;
-    max-width: 1155px;
+    max-width: 1000px;
     overflow: hidden;
     padding: 90px 76px 76px;
     position: relative;
 }
 
 .detail-card::after {
-    background:
-        radial-gradient(72% 55% at 7% 0, rgba(134, 208, 220, 0.55) 0 62%, transparent 63%),
-        radial-gradient(78% 54% at 76% 100%, rgba(134, 208, 220, 0.9) 0 60%, transparent 61%);
+    background: url(../images/map-bg.png) center bottom / contain no-repeat;
     bottom: 0;
     content: "";
-    height: 278px;
+    height: 100%;
     left: 0;
     pointer-events: none;
     position: absolute;
@@ -2511,37 +2462,37 @@ h2 {
     background: var(--teal);
     color: #fff;
     display: inline-flex;
-    font-family: "Noto Serif JP", serif;
-    font-size: 26px;
-    font-weight: 900;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
     justify-content: center;
-    line-height: 1;
-    min-width: 112px;
-    padding: 10px 18px;
+    line-height: 19px;
+    padding: 9px 22px 6px;
 }
 
 .detail-meta time {
-    color: #888;
+    font-family: "Noto Sans Thai", sans-serif;
+    color: #6b6b6b;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .detail-card h2 {
     color: var(--teal);
     font-family: "Noto Serif JP", serif;
-    font-size: clamp(42px, 4vw, 72px);
-    font-weight: 900;
+    font-size: 47px;
+    font-weight: 700;
     letter-spacing: 0.04em;
     line-height: 1.28;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     position: relative;
     z-index: 1;
 }
 
 .detail-rule {
     background:
-        linear-gradient(var(--gold), var(--gold)) 0 center / 100% 2px no-repeat,
-        linear-gradient(var(--gold), var(--gold)) 0 12px / 100% 2px no-repeat;
+        linear-gradient(var(--gold), var(--gold)) 0 center / 100% 1px no-repeat,
+        linear-gradient(var(--gold), var(--gold)) 0 18px / 100% 2px no-repeat;
     height: 18px;
     margin-bottom: 72px;
     position: relative;
@@ -2550,8 +2501,8 @@ h2 {
 
 .detail-map {
     aspect-ratio: 1 / 1;
-    margin: 0 auto 84px;
-    max-width: 610px;
+    margin: 0 auto 50px;
+    max-width: 500px;
     object-fit: cover;
     position: relative;
     width: 62%;
@@ -2568,9 +2519,9 @@ h2 {
 
 .detail-message p {
     color: #333;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.9;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 .detail-contact {
@@ -2930,36 +2881,20 @@ h2 {
     height: 75px;
 }
 
+.construction-hero-bg {
+    background-color: #fff0d8;
+}
+
 .construction-hero {
     align-items: center;
-    background:
-        linear-gradient(rgba(40, 172, 194, 0.5), rgba(40, 172, 194, 0.72)),
-        url("../images/service-construction-hero.png") center / cover no-repeat;
+    background: url(../images/service-construction-hero.png) center bottom / cover no-repeat;
     display: flex;
-    height: 600px;
+    height: 500px;
     justify-content: center;
     margin-top: 75px;
     overflow: hidden;
     position: relative;
     text-align: center;
-}
-
-.construction-hero::after,
-.construction-contact::after {
-    content: "";
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-}
-
-.construction-hero::after {
-    background:
-        radial-gradient(145% 84% at 27% 0, transparent 61%, var(--gold) 62% 68%, transparent 69%),
-        radial-gradient(126% 83% at 78% 0, transparent 62%, var(--teal) 63% 69%, transparent 70%),
-        #fff2d6;
-    bottom: -1px;
-    height: 132px;
 }
 
 .construction-hero-copy {
@@ -2968,51 +2903,33 @@ h2 {
     z-index: 1;
 }
 
-.construction-hero h1 {
-    color: #fff700;
-    font-family: "Noto Serif JP", serif;
-    font-size: clamp(42px, 4.4vw, 76px);
-    font-weight: 900;
-    letter-spacing: 0.1em;
-    line-height: 1.1;
-    text-indent: 0.1em;
-}
-
-.construction-hero p {
-    color: #fff;
-    font-family: "Noto Serif JP", serif;
-    font-size: clamp(17px, 1.7vw, 28px);
-    font-weight: 900;
-    letter-spacing: 0.04em;
-    margin-top: 22px;
-}
-
 .construction-lead {
-    background: #fff2d6;
+    background: #fff0d8;
     padding: 66px 0 98px;
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 .construction-lead::before {
-    color: rgba(255, 255, 255, 0.9);
-    content: "Contents";
-    font-family: "Noto Serif JP", serif;
+    color: #ffe5ba;
+    content: "CONST";
+    font-family: "Noto Sans JP", serif;
     font-size: 190px;
-    font-weight: 900;
+    font-weight: 500;
     left: 112px;
     line-height: 1;
     position: absolute;
     text-orientation: mixed;
     top: 8px;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     writing-mode: vertical-rl;
 }
 
 .construction-title {
     margin: 0 auto 50px;
     position: relative;
-    width: fit-content;
+    width: 350px;
     z-index: 1;
 }
 
@@ -3029,12 +2946,13 @@ h2 {
     font-family: "Noto Serif JP", serif;
     font-size: clamp(36px, 3.1vw, 58px);
     font-weight: 900;
+    margin-bottom: 15px;
 }
 
 .construction-summary {
-    color: #333;
-    font-size: 17px;
-    font-weight: 700;
+    color: #606060;
+    font-size: 22px;
+    font-weight: 500;
     line-height: 2;
     margin: 0 auto;
     max-width: 1180px;
@@ -3043,24 +2961,30 @@ h2 {
 }
 
 .president-message {
-    padding: 160px 0 150px;
+    padding: 140px 0 160px;
 }
 
 .message-grid {
     align-items: center;
     display: grid;
-    gap: 150px;
+    gap: 120px;
     grid-template-columns: 0.75fr 1fr;
 }
 
 .message-catch {
+    display: flex;
+    gap: 0px;
     color: var(--teal);
     font-family: "Noto Serif JP", serif;
-    font-size: clamp(38px, 3.2vw, 64px);
-    font-weight: 500;
-    letter-spacing: 0.16em;
-    line-height: 1.8;
+}
+
+.message-catch span {
     writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
 }
 
 .message-copy {
@@ -3068,79 +2992,65 @@ h2 {
 }
 
 .message-copy span {
-    color: #777;
+    color: #000;
     display: inline-block;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 400;
     margin-bottom: 22px;
-}
-
-.message-copy span::after {
-    background: var(--teal);
-    content: "";
-    display: block;
-    height: 2px;
-    margin-top: 12px;
-    width: 42px;
 }
 
 .message-copy h2 {
     color: var(--teal);
     font-family: "Noto Serif JP", serif;
-    font-size: clamp(32px, 2.6vw, 52px);
-    font-weight: 900;
-    margin-bottom: 32px;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .message-copy p {
     color: #333;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 2;
 }
 
 .message-name {
-    color: var(--teal) !important;
+    color: #6d8489;
     margin-top: 28px;
-    padding-left: 48px;
+    padding-left: 85px;
     position: relative;
+    font-size: 16px !important;
+}
+
+.message-name strong {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 700;
+    color: var(--teal);
+    font-size: 25px;
 }
 
 .message-name::before {
     align-items: center;
-    background: #d8f1f5;
-    border-radius: 50%;
-    color: var(--teal);
-    content: "○";
+    background: url(../images/circle-president.png) center top / cover no-repeat;
+    content: "";
     display: flex;
-    height: 34px;
+    height: 70px;
     justify-content: center;
     left: 0;
     position: absolute;
     top: 6px;
-    width: 34px;
+    width: 70px;
 }
 
 .construction-services {
-    background: #e5f4f7;
+    align-items: center;
+    background: url(../images/bg-lightblue.png) center top / cover no-repeat;
     overflow: hidden;
     padding: 96px 0 0;
     position: relative;
 }
 
-.construction-services::before {
-    background:
-        radial-gradient(116% 82% at 20% 0, #fff 0 50%, transparent 51%),
-        radial-gradient(106% 80% at 83% 0, #fff 0 42%, transparent 43%);
-    content: "";
-    height: 180px;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
+/* 
 .construction-services::after {
     background:
         radial-gradient(108% 72% at 20% 0, rgba(134, 208, 220, 0.95) 0 58%, transparent 59%),
@@ -3152,14 +3062,14 @@ h2 {
     pointer-events: none;
     position: absolute;
     width: 100%;
-}
+} */
 
 .construction-service-grid {
     align-items: center;
     display: grid;
     gap: 98px;
     grid-template-columns: 1fr 1.1fr;
-    margin-bottom: 128px;
+    margin-bottom: 50px;
     position: relative;
     z-index: 1;
 }
@@ -3170,7 +3080,20 @@ h2 {
 
 .construction-service-grid.last {
     margin-bottom: 0;
-    padding-bottom: 145px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.construction-service-grid.last::after {
+    background: url(../images/ins-bottom-bg.png) center bottom / cover no-repeat;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 
 .construction-service-copy {
@@ -3178,24 +3101,29 @@ h2 {
     position: relative;
 }
 
+.construction-service-grid.last .construction-service-copy {
+    max-width: 500px;
+}
+
 .construction-num {
     color: rgba(18, 61, 72, 0.12);
     display: block;
-    font-family: "Noto Serif JP", serif;
+    font-family: "Numans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 92px;
-    font-weight: 500;
     left: -8px;
     line-height: 1;
     position: absolute;
-    top: -72px;
+    top: -90px;
 }
 
 .construction-service-copy small {
     color: var(--gold-deep);
     display: block;
-    font-family: "Noto Serif JP", serif;
-    font-size: 13px;
-    font-weight: 900;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
     position: relative;
@@ -3205,54 +3133,43 @@ h2 {
 .construction-service-copy h2 {
     color: var(--teal);
     font-family: "Noto Serif JP", serif;
-    font-size: clamp(28px, 2.55vw, 48px);
-    font-weight: 900;
+    font-size: clamp(25px, 2.3vw, 40px);
+    font-weight: 700;
     line-height: 1.35;
     margin-bottom: 28px;
     position: relative;
     z-index: 1;
+    border-bottom: 1px solid #fec05d;
+    padding-bottom: 20px;
+    width: fit-content;
 }
 
 .construction-service-copy p {
     color: #333;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 2;
     position: relative;
     z-index: 1;
 }
 
-.construction-service-photo {
+.construction-service-photo.reveal-right {
     position: relative;
+    margin-right: calc(-1 * (100vw - 1220px) / 2 - 34px);
 }
 
-.construction-service-photo::before {
-    background: var(--gold);
-    content: "";
-    height: 32px;
-    left: 28%;
-    position: absolute;
-    top: -22px;
-    transform: rotate(-3deg);
-    width: 50%;
-    z-index: -1;
+.construction-service-photo.reveal-left {
+    position: relative;
+    margin-left: calc(-1 * (100vw - 1220px) / 2 - 34px);
 }
 
-.construction-service-photo::after {
-    background: var(--teal);
-    content: "";
-    height: 34px;
-    left: 0;
-    position: absolute;
-    top: 2px;
-    transform: rotate(2deg);
-    width: 100%;
-    z-index: -1;
+.construction-service-copy.reveal-right .construction-num {
+    left: auto;
+    right: -8px;
 }
 
 .construction-service-photo img {
-    aspect-ratio: 1.36 / 1;
-    border-radius: 0 0 44% 0 / 0 0 10% 0;
+    aspect-ratio: 2 / 1.5;
     object-fit: cover;
     width: 100%;
 }
@@ -3604,6 +3521,457 @@ h2 {
     }
 
     .construction-footer-nav div {
+        gap: 14px;
+    }
+}
+
+/* Contact complete page */
+.contact-complete-page {
+    background: #fff;
+    color: #123d48;
+}
+
+.contact-complete-page .site-header {
+    height: 75px;
+}
+
+.complete-hero {
+    align-items: center;
+    background: url("../images/contact-page-hero.png") center bottom / cover no-repeat;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-top: 75px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.complete-hero-copy {
+    position: relative;
+    transform: translateY(-38px);
+    z-index: 1;
+}
+
+.complete-body {
+    padding: 112px 34px 250px;
+    text-align: center;
+}
+
+.complete-panel {
+    background: #ffa20d;
+    box-shadow: 0 14px 28px rgba(35, 35, 35, 0.18);
+    color: #fff;
+    margin: 0 auto;
+    max-width: 1465px;
+    min-height: 530px;
+    padding: 86px 100px 76px;
+    text-align: left;
+}
+
+.complete-panel h2 {
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(28px, 2.1vw, 42px);
+    font-weight: 900;
+    line-height: 1.4;
+    margin-bottom: 78px;
+    text-align: center;
+}
+
+.complete-panel p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.85;
+    margin: 0 auto 74px;
+    max-width: 1120px;
+}
+
+.complete-panel p:last-child {
+    margin-bottom: 0;
+}
+
+.complete-button {
+    align-items: center;
+    background: var(--teal);
+    border-radius: 999px;
+    color: #fff;
+    display: inline-flex;
+    font-family: "Noto Serif JP", serif;
+    font-size: 40px;
+    font-weight: 900;
+    gap: 42px;
+    justify-content: center;
+    margin-top: 128px;
+    min-width: 510px;
+    padding: 22px 28px 22px 70px;
+}
+
+.complete-button span {
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--teal);
+    display: inline-flex;
+    font-family: "Noto Sans JP", sans-serif;
+    height: 82px;
+    justify-content: center;
+    line-height: 1;
+    width: 82px;
+}
+
+.complete-contact {
+    background:
+        linear-gradient(rgba(20, 164, 190, 0.8), rgba(20, 164, 190, 0.86)),
+        url("../images/workers-construction-photo.png") center / cover no-repeat;
+    color: #fff;
+    min-height: 520px;
+    overflow: hidden;
+    padding: 86px 0 150px;
+    position: relative;
+}
+
+.complete-contact::after {
+    background: radial-gradient(
+        130% 82% at 30% 0,
+        transparent 60%,
+        var(--gold) 61% 70%,
+        transparent 71%
+    );
+    bottom: -10px;
+    height: 102px;
+}
+
+.complete-contact-grid {
+    align-items: center;
+    display: grid;
+    gap: 120px;
+    grid-template-columns: 1fr 0.82fr;
+    position: relative;
+    z-index: 1;
+}
+
+.complete-contact h2 {
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.complete-contact span {
+    align-items: center;
+    color: #fff;
+    display: inline-flex;
+    font-family: "Noto Serif JP", serif;
+    font-size: 17px;
+    gap: 12px;
+    margin: 12px 0 102px;
+}
+
+.complete-contact span::before,
+.complete-contact span::after {
+    background: #fff;
+    content: "";
+    height: 1px;
+    width: 22px;
+}
+
+.complete-contact p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+    max-width: 470px;
+}
+
+.complete-contact-actions {
+    display: grid;
+    gap: 52px;
+}
+
+.complete-contact-actions a {
+    color: #fff;
+    display: grid;
+    gap: 6px;
+    padding-left: 62px;
+    position: relative;
+}
+
+.complete-contact-actions a::before {
+    align-items: center;
+    background: var(--gold);
+    border-radius: 50%;
+    color: #fff;
+    content: "";
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    height: 46px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 46px;
+}
+
+.complete-contact-actions .phone-link::before {
+    content: "☎";
+}
+
+.complete-contact-actions .mail-link::before {
+    content: "✉";
+}
+
+.complete-contact-actions small {
+    font-size: 15px;
+    font-weight: 900;
+    opacity: 0.88;
+}
+
+.complete-contact-actions strong {
+    font-family: "Noto Serif JP", serif;
+    font-size: 37px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+}
+
+.complete-contact-actions em {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.complete-footer {
+    background: var(--gold);
+    color: #123d48;
+    padding: 96px 0 44px;
+}
+
+.complete-footer-grid {
+    display: grid;
+    gap: 150px;
+    grid-template-columns: 1fr 0.95fr;
+}
+
+.complete-footer-logo {
+    height: 42px;
+    margin-bottom: 24px;
+    width: auto;
+}
+
+.complete-footer p,
+.complete-footer a {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.9;
+}
+
+.complete-footer-small {
+    display: flex;
+    gap: 38px;
+    margin-top: 64px;
+}
+
+.complete-footer-small a + a {
+    border-left: 1px solid rgba(18, 61, 72, 0.7);
+    padding-left: 38px;
+}
+
+.complete-footer-nav {
+    display: grid;
+    gap: 88px;
+    grid-template-columns: 0.8fr 1.4fr 1fr;
+    justify-self: end;
+    padding-top: 40px;
+}
+
+.complete-footer-nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.complete-footer-nav a {
+    font-family: "Noto Serif JP", serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.complete-footer-nav ul {
+    display: grid;
+    gap: 8px;
+    list-style: none;
+}
+
+.complete-footer-nav ul a {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.complete-copyright {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 92px;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .complete-panel {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .complete-contact-grid,
+    .complete-footer-grid {
+        gap: 70px;
+    }
+
+    .complete-footer-nav {
+        gap: 44px;
+    }
+}
+
+@media (max-width: 900px) {
+    .complete-hero {
+        height: 520px;
+    }
+
+    .complete-body {
+        padding-bottom: 150px;
+    }
+
+    .complete-panel {
+        min-height: 0;
+        padding: 56px 36px;
+    }
+
+    .complete-panel p {
+        font-size: 18px;
+    }
+
+    .complete-button {
+        font-size: 30px;
+        min-width: 360px;
+        padding-left: 46px;
+    }
+
+    .complete-button span {
+        height: 62px;
+        width: 62px;
+    }
+
+    .complete-contact-grid,
+    .complete-footer-grid,
+    .complete-footer-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .complete-footer-nav {
+        justify-self: start;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-complete-page .site-header {
+        height: 62px;
+    }
+
+    .complete-hero {
+        height: 430px;
+        margin-top: 62px;
+    }
+
+    .complete-hero::after {
+        height: 88px;
+    }
+
+    .complete-hero h1 {
+        font-size: 38px;
+    }
+
+    .complete-hero p {
+        font-size: 17px;
+        padding: 0 20px;
+    }
+
+    .complete-body {
+        padding: 70px 18px 110px;
+    }
+
+    .complete-panel {
+        padding: 42px 24px;
+    }
+
+    .complete-panel h2 {
+        font-size: 25px;
+        margin-bottom: 38px;
+    }
+
+    .complete-panel p {
+        font-size: 15px;
+        margin-bottom: 34px;
+    }
+
+    .complete-button {
+        font-size: 24px;
+        gap: 20px;
+        margin-top: 70px;
+        min-width: 0;
+        padding: 16px 18px 16px 34px;
+        width: min(330px, 100%);
+    }
+
+    .complete-button span {
+        height: 48px;
+        width: 48px;
+    }
+
+    .complete-contact {
+        min-height: auto;
+        padding: 68px 0 112px;
+    }
+
+    .complete-contact span {
+        margin-bottom: 52px;
+    }
+
+    .complete-contact-actions strong {
+        font-size: 27px;
+    }
+
+    .complete-contact-actions a {
+        padding-left: 52px;
+    }
+
+    .complete-contact-actions a::before {
+        height: 38px;
+        width: 38px;
+    }
+
+    .complete-footer {
+        padding-top: 70px;
+    }
+
+    .complete-footer-grid {
+        gap: 56px;
+    }
+
+    .complete-footer-small {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .complete-footer-small a + a {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .complete-footer-nav div {
         gap: 14px;
     }
 }
