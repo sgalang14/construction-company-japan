@@ -6338,3 +6338,429 @@ h2 {
         min-width: 100%;
     }
 }
+
+.inquiry-hero {
+    align-items: center;
+    background: url(../images/privacy-page-hero.png) center bottom / cover no-repeat;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-top: 75px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.form-header-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Section Title */
+.inq-section-title-wrapper {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.inq-section-title-wrapper small {
+    color: var(--gold-deep);
+    display: block;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.inq-section-title {
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(25px, 2.3vw, 40px);
+    color: #1a3263;
+    font-weight: 700;
+    line-height: 1.35;
+    border-bottom: 1px solid #fec05d;
+    padding-bottom: 10px;
+    width: fit-content;
+    text-align: center;
+    margin: 0px;
+}
+
+/* Lead text */
+.form-lead {
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Grey Notice Box */
+.notice-box {
+    background-color: #f2f2f2; /* Light grey background */
+    border-radius: 20px; /* Rounded corners as seen in image */
+    padding: 40px 60px;
+    display: inline-block;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.notice-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notice-list li {
+    font-size: 16px;
+    line-height: 2;
+    color: #333333;
+    position: relative;
+}
+
+/* Styling for the specific required dot marker */
+.required-dot {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Green Privacy Link */
+.privacy-link {
+    color: #4b8a5f; /* Green color from image */
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.privacy-link:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .notice-box {
+        padding: 25px 30px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+}
+
+.contact-form-main {
+    max-width: 900px;
+    margin: 40px auto 150px;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #b5c1c9;
+    padding: 20px 0;
+    gap: 30px;
+}
+
+/* Label Section */
+.form-label {
+    width: 300px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a3263;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-label.end {
+    justify-content: end;
+}
+
+/* Input Section */
+.form-input {
+    flex: 1;
+    padding-right: 10px;
+}
+
+/* Badge Styling */
+.badge-required {
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-weight: normal;
+}
+
+/* Standard Inputs */
+.input-full,
+.textarea-full,
+.select-pref,
+.input-zip {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #fcfcfc;
+}
+
+.input-full {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.textarea-full {
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+/* Postal Code / Zip Row */
+.zip-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-zip {
+    width: 60px;
+    text-align: center;
+}
+
+.input-note {
+    font-size: 14px;
+    color: #333;
+    margin-left: 5px;
+}
+
+/* Select Dropdown */
+.select-pref {
+    width: 120px;
+    height: 40px;
+}
+
+/* Radio Buttons */
+.radio-label {
+    margin-right: 45px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Align Top for Textarea Row */
+.form-row.last-row {
+    align-items: flex-start;
+}
+
+.form-row.last-row .form-label {
+    margin-top: 10px;
+}
+
+/* Footer Note */
+.form-footer-note {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .form-input {
+        width: 100%;
+    }
+}
+
+.blue-wave-bg {
+    background: url(../images/blue-wave.png) center / cover no-repeat;
+    padding: 115px 0 120px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.blue-wave-title h2 {
+    color: var(--gold-deep);
+    font-family: "Noto Serif JP", serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.35;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+.blue-wave-content p {
+    color: #fff;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.35;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+.inquiry-body {
+    padding: 100px 34px 150px;
+    text-align: center;
+}
+
+.inquiry-body .complete-button {
+    margin-top: 0px;
+}
+
+.contact-hero {
+    align-items: center;
+    background: url(../images/recruitment-form-hero.png) center bottom / cover no-repeat;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-top: 75px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.contact-methods {
+    align-items: center;
+    background: url(../images/bg-lightblue.png) center top / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -150px;
+    padding: 150px 0 120px;
+    overflow: hidden;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.contact-col {
+    flex: 1;
+    max-width: 400px;
+}
+
+/* Icon Circles */
+.icon-circle-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.icon-circle img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Typography */
+.contact-col h3 {
+    font-size: 22px;
+    color: #1a3a63;
+    font-weight: 400;
+}
+
+.tel-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a3a63;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+
+.sub-info {
+    font-size: 14px;
+    color: #888;
+}
+
+.mail-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .contact-col {
+        margin: 0 auto;
+    }
+}
+
+.confirm-section {
+    background: url(../images/map-bg.png) center bottom / 100% no-repeat;
+    background-color: var(--teal-soft);
+    padding: 150px 0 150px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.confirm-row {
+    display: flex;
+    padding: 18px 0;
+    border-bottom: 1px dotted #fdb124;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.confirm-label {
+    width: 250px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #20aeca;
+    letter-spacing: 0.05em;
+}
+
+.confirm-value {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    min-height: 1.5em; /* Keeps row height even if empty */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .confirm-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .confirm-label {
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+}

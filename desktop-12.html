@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>お問い合わせ | 株式会社 千代田</title>
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;800;900&family=Noto+Serif+JP:wght@600;700;800;900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Thai:wght@100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body class="company-page">
+        <header class="site-header">
+            <a class="logo" href="index.html" aria-label="株式会社 千代田">
+                <img src="images/logo.png" alt="株式会社 千代田" />
+            </a>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="メニューを開く"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="nav" aria-label="メインナビゲーション">
+                <button class="close-menu" id="close-menu" aria-label="メニューを閉じる"></button>
+                <a href="index.html">HOME</a>
+                <a href="#service">事業内容</a>
+                <a href="#construction">施⼯実績</a>
+                <a href="#company">会社情報</a>
+                <a href="#recruit">採⽤情報</a>
+                <a class="nav-contact" href="#contact">お問い合わせ</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="inquiry-hero">
+                <div class="hero-copy">
+                    <h1>お 問 い 合 わ せ</h1>
+                    <p>HOME ＞ お問い合わせ</p>
+                </div>
+            </section>
+
+            <section class="form-header-section">
+                <div class="container">
+                    <!-- Section Title -->
+                    <div class="inq-section-title-wrapper">
+                        <h2 class="inq-section-title">お問い合わせフォーム</h2>
+                    </div>
+
+                    <!-- Lead Text -->
+                    <div class="form-lead">
+                        <p>
+                            下記のメールフォームに必要事項をご記⼊のうえお問い合わせください。<br />
+                            内容を確認次第、あらためてご連絡をさせていただきます。
+                        </p>
+                    </div>
+
+                    <!-- Notice Box -->
+                    <div class="notice-box">
+                        <ul class="notice-list">
+                            <li>
+                                <span class="required-dot">・</span>
+                                がついている項目は必ずご記入ください。
+                            </li>
+                            <li>
+                                ・機種依存文字、半角カタカナ・記号はご利用になれませんのでご注意ください。
+                            </li>
+                            <li>
+                                ・<a href="#" class="privacy-link">個人情報保護方針</a>
+                                をご覧いただき、同意のうえご利用ください。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <form class="contact-form-main reveal-up">
+                <div class="form-container">
+                    <!-- Radio Group -->
+                    <div class="form-row first-row">
+                        <div class="form-label end">
+                            <span class="badge-required">必須</span>
+                        </div>
+                        <div class="form-input">
+                            <label class="radio-label"
+                                ><input type="radio" name="type" checked /> <span></span
+                            ></label>
+                            <label class="radio-label"
+                                ><input type="radio" name="type" /> 採用について</label
+                            >
+                            <label class="radio-label"
+                                ><input type="radio" name="type" /> その他</label
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="form-row">
+                        <div class="form-label">
+                            お名前 <span class="badge-required">必須</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" class="input-full" />
+                        </div>
+                    </div>
+
+                    <!-- Furigana -->
+                    <div class="form-row">
+                        <div class="form-label">
+                            フリガナ <span class="badge-required">必須</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" class="input-full" />
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-row">
+                        <div class="form-label">
+                            メールアドレス <span class="badge-required">必須</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="email" class="input-full" />
+                        </div>
+                    </div>
+
+                    <!-- Company Name -->
+                    <div class="form-row">
+                        <div class="form-label">
+                            会社名 <span class="badge-required">必須</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" class="input-full" />
+                        </div>
+                    </div>
+
+                    <!-- Postal Code -->
+                    <div class="form-row">
+                        <div class="form-label">郵便番号</div>
+                        <div class="form-input zip-row">
+                            <span>〒</span>
+                            <input type="text" class="input-zip" />
+                            <span>-</span>
+                            <input type="text" class="input-zip" />
+                            <span class="input-note">（半角英数）※自動で住所が入ります。</span>
+                        </div>
+                    </div>
+
+                    <!-- Prefecture -->
+                    <div class="form-row">
+                        <div class="form-label">都道府県</div>
+                        <div class="form-input">
+                            <select class="select-pref">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- City/Address -->
+                    <div class="form-row">
+                        <div class="form-label">市区町村・番地</div>
+                        <div class="form-input">
+                            <input type="text" class="input-full" />
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-row">
+                        <div class="form-label">電話番号</div>
+                        <div class="form-input">
+                            <input type="tel" class="input-full" />
+                        </div>
+                    </div>
+
+                    <!-- FAX -->
+                    <div class="form-row">
+                        <div class="form-label">FAX番号</div>
+                        <div class="form-input">
+                            <input type="text" class="input-full" />
+                        </div>
+                    </div>
+
+                    <!-- Inquiry Content -->
+                    <div class="form-row last-row">
+                        <div class="form-label">
+                            お問合せ内容 <span class="badge-required">必須</span>
+                        </div>
+                        <div class="form-input">
+                            <textarea class="textarea-full"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="form-footer-note">
+                    ※
+                    ご入力いただいた個人情報につきましては、お問合せ対応の業務に利用させていただきます。
+                </p>
+            </form>
+
+            <!-- PHILOSOPHY blue-wave -->
+            <div class="blue-wave-bg">
+                <section class="blue-wave">
+                    <div class="container">
+                        <div class="blue-wave-title reveal-up">
+                            <h2>個⼈情報保護について</h2>
+                        </div>
+
+                        <div class="blue-wave-content reveal-up">
+                            <p>
+                                １．個⼈情報の利⽤⽬的について収集した個⼈情報は、本⼈の許可なく雇⽤管理に関連する資料その他当社で必要とされる作業の範囲内以
+                                外の⽬的では使⽤しません。
+                            </p>
+                            <p>
+                                ２．個⼈情報の第三者提供について収集した個⼈情報は、委託業務、法律上公的機関への届出･提出が必要な場合、事故等での緊急時を除い
+                                て第三者へ提供しません。
+                            </p>
+                            <p>
+                                ３．個⼈情報の開⽰等について収集した個⼈情報の開⽰、内容の訂正、追加、削除の求めがあった場合には、ご本⼈であることを確認のう
+                                えすみやかに対応します。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="inquiry-body">
+                <a class="complete-button reveal-up" href="#">
+                    確認画面へ
+                    <span>→</span>
+                </a>
+            </section>
+
+            <section class="contact-band">
+                <div class="container contact-grid">
+                    <div>
+                        <h2>お問い合わせ</h2>
+                        <span>Contact</span>
+                        <p>
+                            ご質問などありましたら、お電話・<br />
+                            お問い合わせフォームより受け付けております。
+                        </p>
+                    </div>
+                    <div class="contact-actions">
+                        <!-- PHONE -->
+                        <a href="tel:0234282110" class="contact-item">
+                            <div class="icon-circle">
+                                <img src="images/phone-icon.svg" alt="phone icon" />
+                            </div>
+
+                            <div class="contact-text">
+                                <p class="label">お電話でのお問い合わせ</p>
+                                <h3 class="number">0234-28-2110</h3>
+                                <div class="hours">受付時間：⽉〜⾦／8:00〜17:00</div>
+                            </div>
+
+                            <div class="arrow">→</div>
+                        </a>
+
+                        <!-- EMAIL -->
+                        <a href="#" class="contact-item">
+                            <div class="icon-circle">
+                                <img src="images/mail-icon.svg" alt="mail icon" />
+                            </div>
+
+                            <div class="contact-text">
+                                <p class="label">メールフォームでのお問い合わせ</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <img class="footer-logo" src="images/company-logo.png" alt="株式会社 千代田" />
+                    <p>
+                        〒998-0125<br />山形県酒田市広野字末広102-2<br />TEL 0234-28-2110 / FAX
+                        0234-28-2112
+                    </p>
+
+                    <div class="bottom-text">
+                        お知らせ &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 個⼈情報保護⽅針
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="フッターナビゲーション">
+                    <div class="footer-col">
+                        <a href="#">HOME</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <a href="#service">事業内容</a>
+                        <ul>
+                            <li><a href="#">建築現場施工</a></li>
+                            <li><a href="#">スポーツ設備・施設施工</a></li>
+                            <li><a href="#">建築資材の販売</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col footer-col-right">
+                        <a href="#construction">施工実績</a>
+                        <a href="#company">会社情報</a>
+                        <a href="#recruit">採用情報</a>
+                    </div>
+                </nav>
+            </div>
+            <p class="copyright">Copyright© 株式会社千代⽥ Alｌ Right Reserved.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
