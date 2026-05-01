@@ -2031,6 +2031,10 @@ h2 {
     position: relative;
 }
 
+.news-index-item:hover {
+    color: #0f8097;
+}
+
 .news-index-item::before {
     background: #89d1e3;
     bottom: -2px;
