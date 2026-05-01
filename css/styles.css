@@ -2961,7 +2961,7 @@ h2 {
 }
 
 .president-message {
-    padding: 140px 0 160px;
+    padding: 140px 0 100px;
 }
 
 .message-grid {
@@ -3096,12 +3096,12 @@ h2 {
     z-index: -1;
 }
 
-.construction-service-copy {
+.details-service-copy {
     min-height: 250px;
     position: relative;
 }
 
-.construction-service-grid.last .construction-service-copy {
+.construction-service-grid.last .details-service-copy {
     max-width: 500px;
 }
 
@@ -3118,19 +3118,19 @@ h2 {
     top: -90px;
 }
 
-.construction-service-copy small {
+.details-service-copy small {
     color: var(--gold-deep);
     display: block;
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.1em;
     margin-bottom: 10px;
     position: relative;
     z-index: 1;
 }
 
-.construction-service-copy h2 {
+.details-service-copy h2 {
     color: var(--teal);
     font-family: "Noto Serif JP", serif;
     font-size: clamp(25px, 2.3vw, 40px);
@@ -3144,7 +3144,7 @@ h2 {
     width: fit-content;
 }
 
-.construction-service-copy p {
+.details-service-copy p {
     color: #333;
     font-size: 16px;
     font-weight: 400;
@@ -3163,7 +3163,7 @@ h2 {
     margin-left: calc(-1 * (100vw - 1220px) / 2 - 34px);
 }
 
-.construction-service-copy.reveal-right .construction-num {
+.details-service-copy.reveal-right .construction-num {
     left: auto;
     right: -8px;
 }
@@ -3455,7 +3455,7 @@ h2 {
 
     .construction-summary,
     .message-copy p,
-    .construction-service-copy p {
+    .details-service-copy p {
         font-size: 14px;
     }
 
@@ -3472,7 +3472,7 @@ h2 {
         top: -52px;
     }
 
-    .construction-service-copy h2 {
+    .details-service-copy h2 {
         font-size: 27px;
     }
 
@@ -3972,6 +3972,713 @@ h2 {
     }
 
     .complete-footer-nav div {
+        gap: 14px;
+    }
+}
+
+/* Sports facility service page */
+.sports-page {
+    background: #fff;
+    color: #123d48;
+}
+
+.sports-page .site-header {
+    height: 75px;
+}
+
+.sports-hero-bg {
+    background-color: #fff0d8;
+}
+
+.sports-hero {
+    align-items: center;
+    background: url(../images/service-sports-detail-2.png) center bottom / cover no-repeat;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-top: 75px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.sports-hero-copy {
+    position: relative;
+    transform: translateY(-20px);
+    z-index: 1;
+}
+
+.sports-mission {
+    background: #fff2d6;
+    padding: 110px 0 142px;
+}
+
+.mission-grid {
+    align-items: center;
+    display: grid;
+    gap: 140px;
+    grid-template-columns: 0.8fr 1.2fr;
+}
+
+.mission-heading h2 {
+    color: var(--teal);
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(40px, 3.3vw, 62px);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+.mission-heading span {
+    color: var(--gold);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.mission-grid p {
+    color: #606060;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.05;
+}
+
+.sports-services {
+    padding: 116px 0 60px;
+}
+
+.sports-service-grid {
+    align-items: center;
+    display: grid;
+    gap: 110px;
+    grid-template-columns: 1.1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.sports-service-grid.reverse {
+    grid-template-columns: 1fr 1.1fr;
+}
+
+.sports-service-photo.reveal-right {
+    position: relative;
+    margin-right: calc(-1 * (100vw - 1220px) / 2 - 34px);
+}
+
+.sports-service-photo.reveal-left {
+    position: relative;
+    margin-left: calc(-1 * (100vw - 1220px) / 2 - 34px);
+}
+
+.sports-service-photo img {
+    aspect-ratio: 1.9 / 1.6;
+    object-fit: cover;
+    width: 100%;
+}
+
+.sports-service-copy {
+    min-height: 250px;
+    position: relative;
+}
+
+.sports-num {
+    color: rgba(18, 61, 72, 0.12);
+    display: block;
+    font-family: "Noto Serif JP", serif;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: -82px;
+}
+
+.sports-service-grid.reverse .sports-num {
+    left: 0;
+    right: auto;
+}
+
+.sports-service-copy small {
+    color: var(--gold-deep);
+    display: block;
+    font-family: "Noto Serif JP", serif;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.sports-service-copy h2 {
+    color: var(--teal);
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(28px, 2.45vw, 46px);
+    font-weight: 900;
+    line-height: 1.35;
+    margin-bottom: 30px;
+    padding-bottom: 26px;
+    position: relative;
+    z-index: 1;
+}
+
+.sports-service-copy h2::after {
+    background: var(--gold);
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 270px;
+}
+
+.sports-service-copy p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+    position: relative;
+    z-index: 1;
+}
+
+.sports-commitment {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: 760px;
+    overflow: hidden;
+}
+
+.commitment-copy-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.bg-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 0;
+}
+
+.commitment-copy {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+}
+
+.commitment-copy span {
+    color: #fff;
+    display: block;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.commitment-copy h2 {
+    color: #ffe79b;
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(25px, 2.3vw, 40px);
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #fec05d;
+    padding-bottom: 20px;
+    width: fit-content;
+}
+
+.commitment-copy p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+}
+
+.commitment-detail {
+    border-left: 3px solid #ffa310;
+    padding-left: 15px;
+    margin-top: 25px;
+}
+
+.commitment-copy h3 {
+    color: #1ca8cb;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.commitment-photo {
+    flex: 1;
+}
+
+.commitment-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sports-process {
+    padding: 162px 0 145px;
+    text-align: center;
+}
+
+.sports-process .process-title {
+    margin-bottom: 66px;
+}
+
+.process-title img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sports-process .process-title span {
+    color: #000;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.sports-process .process-title h2 {
+    color: var(--teal);
+    font-family: "Noto Serif JP", serif;
+    font-size: clamp(40px, 3.2vw, 60px);
+    font-weight: 700;
+}
+
+.sports-process-grid {
+    display: grid;
+    gap: 56px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1250px;
+}
+
+.sports-border {
+    background-color: #fff;
+    border: 2px solid var(--gold);
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.sports-process-card {
+    background: #e3f7ff;
+    border-radius: 35px;
+    min-height: 100%;
+    padding: 140px 30px 40px;
+    position: relative;
+    text-align: left;
+}
+
+.sports-process-card span {
+    color: rgba(18, 61, 72, 0.14);
+    font-family: "Numans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 1;
+    left: auto;
+    right: 25px;
+    top: 70px;
+    position: absolute;
+}
+
+.sports-process-card h3 {
+    color: var(--teal);
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.sports-process-card p {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+    position: relative;
+}
+
+.sports-contact {
+    background:
+        linear-gradient(rgba(20, 164, 190, 0.8), rgba(20, 164, 190, 0.86)),
+        url("../images/workers-construction-photo.png") center / cover no-repeat;
+    color: #fff;
+    min-height: 520px;
+    overflow: hidden;
+    padding: 86px 0 150px;
+    position: relative;
+}
+
+.sports-contact::after {
+    background: radial-gradient(
+        130% 82% at 30% 0,
+        transparent 60%,
+        var(--gold) 61% 70%,
+        transparent 71%
+    );
+    bottom: -10px;
+    height: 102px;
+}
+
+.sports-contact-grid {
+    align-items: center;
+    display: grid;
+    gap: 120px;
+    grid-template-columns: 1fr 0.82fr;
+    position: relative;
+    z-index: 1;
+}
+
+.sports-contact h2 {
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.sports-contact span {
+    align-items: center;
+    color: #fff;
+    display: inline-flex;
+    font-family: "Noto Serif JP", serif;
+    font-size: 17px;
+    gap: 12px;
+    margin: 12px 0 102px;
+}
+
+.sports-contact span::before,
+.sports-contact span::after {
+    background: #fff;
+    content: "";
+    height: 1px;
+    width: 22px;
+}
+
+.sports-contact p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+    max-width: 470px;
+}
+
+.sports-contact-actions {
+    display: grid;
+    gap: 52px;
+}
+
+.sports-contact-actions a {
+    color: #fff;
+    display: grid;
+    gap: 6px;
+    padding-left: 62px;
+    position: relative;
+}
+
+.sports-contact-actions a::before {
+    align-items: center;
+    background: var(--gold);
+    border-radius: 50%;
+    color: #fff;
+    content: "";
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    height: 46px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 46px;
+}
+
+.sports-contact-actions .phone-link::before {
+    content: "☎";
+}
+
+.sports-contact-actions .mail-link::before {
+    content: "✉";
+}
+
+.sports-contact-actions small {
+    font-size: 15px;
+    font-weight: 900;
+    opacity: 0.88;
+}
+
+.sports-contact-actions strong {
+    font-family: "Noto Serif JP", serif;
+    font-size: 37px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+}
+
+.sports-contact-actions em {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.sports-footer {
+    background: var(--gold);
+    color: #123d48;
+    padding: 96px 0 44px;
+}
+
+.sports-footer-grid {
+    display: grid;
+    gap: 150px;
+    grid-template-columns: 1fr 0.95fr;
+}
+
+.sports-footer-logo {
+    height: 42px;
+    margin-bottom: 24px;
+    width: auto;
+}
+
+.sports-footer p,
+.sports-footer a {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.9;
+}
+
+.sports-footer-small {
+    display: flex;
+    gap: 38px;
+    margin-top: 64px;
+}
+
+.sports-footer-small a + a {
+    border-left: 1px solid rgba(18, 61, 72, 0.7);
+    padding-left: 38px;
+}
+
+.sports-footer-nav {
+    display: grid;
+    gap: 88px;
+    grid-template-columns: 0.8fr 1.4fr 1fr;
+    justify-self: end;
+    padding-top: 40px;
+}
+
+.sports-footer-nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.sports-footer-nav a {
+    font-family: "Noto Serif JP", serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.sports-footer-nav ul {
+    display: grid;
+    gap: 8px;
+    list-style: none;
+}
+
+.sports-footer-nav ul a {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sports-copyright {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 92px;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .mission-grid,
+    .sports-service-grid,
+    .sports-service-grid.reverse,
+    .sports-contact-grid,
+    .sports-footer-grid {
+        gap: 70px;
+    }
+
+    .sports-commitment {
+        grid-template-columns: 34px minmax(360px, 1fr) minmax(430px, 1fr);
+    }
+
+    .sports-process-grid {
+        gap: 28px;
+    }
+
+    .sports-footer-nav {
+        gap: 44px;
+    }
+}
+
+@media (max-width: 900px) {
+    .sports-hero {
+        height: 520px;
+    }
+
+    .sports-mission {
+        padding: 80px 0 100px;
+    }
+
+    .mission-grid,
+    .sports-service-grid,
+    .sports-service-grid.reverse,
+    .sports-contact-grid,
+    .sports-footer-grid,
+    .sports-footer-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .sports-service-grid {
+        margin-bottom: 95px;
+    }
+
+    .sports-commitment {
+        grid-template-columns: 1fr;
+    }
+
+    .commitment-copy {
+        grid-column: 1;
+        padding: 120px 34px 70px;
+    }
+
+    .commitment-photo {
+        grid-column: 1;
+        min-height: 420px;
+    }
+
+    .sports-process-grid {
+        grid-template-columns: 1fr;
+        max-width: 460px;
+    }
+
+    .sports-footer-nav {
+        justify-self: start;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .sports-page .site-header {
+        height: 62px;
+    }
+
+    .sports-hero {
+        height: 430px;
+        margin-top: 62px;
+    }
+
+    .sports-hero::after {
+        height: 88px;
+    }
+
+    .sports-hero h1 {
+        font-size: 38px;
+    }
+
+    .sports-hero p {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .mission-heading h2 {
+        font-size: 32px;
+    }
+
+    .mission-grid p,
+    .sports-service-copy p,
+    .commitment-copy p {
+        font-size: 14px;
+    }
+
+    .sports-services {
+        padding-top: 76px;
+    }
+
+    .sports-num {
+        font-size: 64px;
+        top: -52px;
+    }
+
+    .sports-service-copy h2 {
+        font-size: 26px;
+    }
+
+    .commitment-copy h2,
+    .sports-process .process-title h2 {
+        font-size: 30px;
+    }
+
+    .sports-process {
+        padding: 100px 0;
+    }
+
+    .sports-process-card {
+        min-height: 230px;
+        padding: 60px 30px 34px;
+    }
+
+    .sports-contact {
+        min-height: auto;
+        padding: 68px 0 112px;
+    }
+
+    .sports-contact span {
+        margin-bottom: 52px;
+    }
+
+    .sports-contact-actions strong {
+        font-size: 27px;
+    }
+
+    .sports-contact-actions a {
+        padding-left: 52px;
+    }
+
+    .sports-contact-actions a::before {
+        height: 38px;
+        width: 38px;
+    }
+
+    .sports-footer {
+        padding-top: 70px;
+    }
+
+    .sports-footer-grid {
+        gap: 56px;
+    }
+
+    .sports-footer-small {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .sports-footer-small a + a {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .sports-footer-nav div {
         gap: 14px;
     }
 }
