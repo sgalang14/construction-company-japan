@@ -1,5 +1,5 @@
 :root {
-    --teal: #20aeca;
+    --teal: #1CA8CB;
     --teal-dark: #123f4a;
     --teal-soft: #e5f4f7;
     --aqua: #86d0dc;
@@ -49,18 +49,19 @@ a {
     align-items: center;
     background: var(--gold);
     display: flex;
-    height: 75px;
+    height: 90px;
     justify-content: space-between;
     left: 0;
-    padding: 0 42px;
+    padding: 0 35px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 1px 1px 10px #00000052;
 }
 
 .logo img {
-    height: 38px;
+    height: 48px;
     width: auto;
 }
 
@@ -69,15 +70,15 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.78);
     border-radius: 999px;
     display: flex;
-    gap: 2px;
-    padding: 5px 10px;
+    gap: 10px;
+    padding: 7px 10px 7px 25px;
 }
 
 .site-nav a {
     border-radius: 999px;
     color: #0d4150;
     font-family: "Noto Sans JP", serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1;
     padding: 14px 18px;
@@ -89,6 +90,7 @@ a {
     color: var(--white);
     min-width: 116px;
     text-align: center;
+    font-weight: 300;
 }
 
 .menu-toggle,
@@ -233,24 +235,37 @@ h2 {
 .section-copy h2,
 .feature-title h2 {
     color: var(--teal);
-    font-size: clamp(28px, 3vw, 54px);
+    font-size: clamp(28px, 3.2vw, 54px);
     font-weight: 500;
-    line-height: 1.45;
-    margin-bottom: 34px;
+    line-height: 1.35;
+    margin-bottom: 30px;
 }
 
 .section-copy p,
-.feature-copy p,
 .cad-copy p,
 .recruit-card p,
 .contact-band p {
     color: var(--muted);
-    font-size: 18px;
+    font-size: 18.5px;
     font-weight: 400;
+}
+
+.feature-copy p {
+    color: #707070;
+    font-size: 21.5px;
+    font-weight: 400;
+    line-height: 1.35;
 }
 
 .accent-text {
     color: var(--gold) !important;
+    font-weight: 400 !important;
+    font-size: 18px;
+    margin-top: 22px;
+}
+
+.accent-text-blue {
+    color: var(--teal) !important;
     font-weight: 400 !important;
     font-size: 18px;
     margin-top: 22px;
@@ -261,13 +276,14 @@ h2 {
     border-radius: 999px;
     color: var(--white);
     display: inline-flex;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
+    letter-spacing: 3px;
     gap: 16px;
     justify-content: center;
     margin-top: 28px;
     min-width: 176px;
-    padding: 10px 10px 10px 22px;
+    padding: 12px 10px 12px 25px;
 }
 
 .pill-button span {
@@ -283,7 +299,7 @@ h2 {
 }
 
 .pill-button.teal {
-    background: var(--teal);
+    background: #1ca8cb;
 }
 
 .pill-button.teal span {
@@ -353,6 +369,8 @@ h2 {
 
 .feature-title h2 {
     margin-top: 65px;
+    color: #2095b2 !important;
+    letter-spacing: 8px;
 }
 
 .services .section-title h2 {
@@ -405,19 +423,19 @@ h2 {
 
 .service-card {
     background: var(--white);
-    border-radius: 16px;
+    border-radius: 25px;
     box-shadow: 0 18px 36px rgba(11, 89, 109, 0.14);
     color: var(--ink);
     min-height: 390px;
     overflow: hidden;
-    padding: 20px 0px 30px 30px;
+    padding: 15px 0px 30px 30px;
     position: relative;
 }
 
 .service-card h3 {
-    color: var(--ink);
-    font-size: 16px;
-    font-weight: 500;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 900;
     margin: 0 40px 16px 0;
     font-family: "Noto Serif JP", serif;
 }
@@ -458,9 +476,9 @@ h2 {
     border-radius: 0 90px 90px 0;
     bottom: 50px;
     left: 10px;
-    padding: 20px 25px 20px;
+    padding: 25px;
     position: absolute;
-    width: 78%;
+    width: 70%;
 }
 
 .service-num {
@@ -480,21 +498,24 @@ h2 {
     color: var(--teal);
     display: block;
     font-family: "Noto Serif JP", serif;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 34px;
+    font-weight: 700;
     line-height: 1;
     letter-spacing: 10px;
+    position: relative;
+    top: -5px;
+    left: -3px;
 }
 
 .service-card-copy p {
     color: var(--muted);
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 2;
 }
 
 .cad {
-    padding: 135px 0 190px;
+    padding: 100px 30px 190px;
 }
 
 .cad-panel {
@@ -519,17 +540,18 @@ h2 {
 
 .cad-copy {
     left: 86px;
-    max-width: 680px;
+    max-width: 620px;
     position: absolute;
-    top: 78px;
+    top: 90px;
     z-index: 3;
 }
 
 .cad-copy h2 {
     color: rgba(51, 51, 51, 1);
     font-size: clamp(30px, 3vw, 48px);
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.45;
+    letter-spacing: 3px;
     margin-bottom: 30px;
     font-family: "Noto Serif JP", serif;
 }
@@ -658,7 +680,7 @@ h2 {
 
 .news-bg {
     background-color: rgba(229, 244, 247, 1);
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 
 .news {
@@ -682,20 +704,21 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     z-index: 2;
+    margin-top: 150px;
 }
 
 .news-card {
     position: relative;
-    border-radius: 22px;
+    border-radius: 40px;
     border: 2px solid #e6c07b;
-    padding: 5px;
+    padding: 3px;
     min-height: 130px;
 }
 
 .news-card .news-detail {
     border: 2px solid #e6c07b;
-    border-radius: 22px;
-    padding: 34px 24px 22px;
+    border-radius: 35px;
+    padding: 45px 24px 45px;
     text-align: center;
     background: var(--white);
 }
@@ -705,11 +728,11 @@ h2 {
     border-radius: 999px;
     font-family: "Noto Serif JP", serif;
     color: var(--white);
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 500;
     left: 50%;
     min-width: 142px;
-    padding: 7px 16px;
+    padding: 7px 25px;
     position: absolute;
     top: -23px;
     transform: translateX(-50%);
@@ -718,7 +741,7 @@ h2 {
 .news-card p {
     color: var(--teal);
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 12px;
 }
 
@@ -742,7 +765,7 @@ h2 {
         url(../images/workers-construction-photo.png) center / cover no-repeat;
     color: var(--white);
     overflow: hidden;
-    padding: 50px 0 150px;
+    padding: 50px 70px 150px;
     margin-bottom: -100px;
     position: relative;
 }
@@ -751,14 +774,15 @@ h2 {
     align-items: center;
     display: grid;
     gap: 60px;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 1fr 0.4fr;
 }
 
 .contact-band h2 {
     color: var(--white);
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 25px;
+    font-weight: 700;
     font-family: "Noto Serif JP", serif;
+    margin-bottom: -10px;
 }
 
 .contact-band span {
@@ -770,7 +794,7 @@ h2 {
     font-weight: 400;
     line-height: 1;
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .contact-band span::before,
@@ -786,7 +810,7 @@ h2 {
     color: rgba(255, 255, 255, 0.95);
     max-width: 490px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .contact-actions {
@@ -800,15 +824,15 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     color: #fff;
     position: relative;
 }
 
 /* ICON */
-.icon-circle {
-    width: 64px;
-    height: 64px;
+.contact-actions .icon-circle {
+    width: 35px;
+    height: 35px;
     background: var(--gold);
     border-radius: 50%;
     display: flex;
@@ -882,7 +906,7 @@ h2 {
     overflow: hidden;
     position: relative;
     color: #000;
-    padding: 120px 0 35px;
+    padding: 110px 70px 35px;
     z-index: 1;
 }
 .bg-gold {
@@ -908,9 +932,11 @@ h2 {
 
 .footer-nav {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 60px;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    gap: 40px;
     align-items: flex-start;
+    top: 50px;
+    position: relative;
 }
 
 /* COLUMN */
@@ -918,6 +944,10 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.footer-col:nth-child(2) {
+    gap: 0px;
 }
 
 /* MAIN LINKS */
@@ -1326,7 +1356,6 @@ h2 {
 }
 
 .insulation-page .site-header {
-    height: 75px;
     margin: 0;
 }
 
@@ -1370,9 +1399,9 @@ h2 {
 
 .hero-copy p {
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
     font-family: "Noto Serif JP", serif;
 }
 
@@ -1417,7 +1446,7 @@ h2 {
     background: url(../images/bg-lightblue.png) center top / cover no-repeat;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .ins-split,
@@ -1450,7 +1479,7 @@ h2 {
 .ins-copy,
 .merit-copy,
 .public-copy {
-    max-width: 550px;
+    max-width: 600px;
     position: relative;
     margin-top: 50px;
 }
@@ -1462,7 +1491,7 @@ h2 {
 }
 
 .ins-number {
-    color: rgba(32, 174, 202, 0.24);
+    color: #BEE3EC;
     display: block;
     font-family: "Noto Sans JP", serif;
     font-size: 72px;
@@ -1484,14 +1513,21 @@ h2 {
     left: 7px;
 }
 
-.ins-copy p,
 .merit-copy li,
 .public-copy li {
     color: #333;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 20px;
+}
+
+.ins-copy p{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 15px;
 }
 
 .process-copy p {
@@ -1516,7 +1552,7 @@ h2 {
 
 .ins-features {
     background: url(../images/bg-ins-about-2.png) center top / cover no-repeat;
-    padding: 140px 0 206px;
+    padding: 145px 0 200px;
     position: relative;
     overflow: hidden;
 }
@@ -1549,6 +1585,8 @@ h2 {
     gap: 36px;
     position: relative;
     z-index: 2;
+    padding: 0px;
+    top: 40px;
 }
 
 .feature-row {
@@ -1585,7 +1623,7 @@ h2 {
 
 .ins-process {
     background-color: rgb(229, 244, 247);
-    padding: 118px 0 118px;
+    padding: 50px 0 60px;
     position: relative;
 }
 
@@ -1648,13 +1686,13 @@ h2 {
 
 .ins-public-bg {
     background-color: rgba(229, 244, 247, 1);
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 
 .ins-public {
     align-items: center;
     background: url(../images/news-bg.png) center top / cover no-repeat;
-    padding: 150px 34px 150px;
+    padding: 0px 34px 150px;
     overflow: hidden;
     position: relative;
 }
@@ -1979,10 +2017,6 @@ h2 {
 .news-page {
     background: #fff;
     color: #123d48;
-}
-
-.news-page .site-header {
-    height: 75px;
 }
 
 .news-hero {
@@ -2404,10 +2438,6 @@ h2 {
 .news-detail-page {
     background: #fff;
     color: #123d48;
-}
-
-.news-detail-page .site-header {
-    height: 75px;
 }
 
 .detail-hero {
@@ -2881,10 +2911,6 @@ h2 {
     color: #123d48;
 }
 
-.construction-page .site-header {
-    height: 75px;
-}
-
 .construction-hero-bg {
     background-color: #fff0d8;
 }
@@ -3104,6 +3130,7 @@ h2 {
 .details-service-copy {
     min-height: 250px;
     position: relative;
+    margin-right: -15px;
 }
 
 .construction-service-grid.last .details-service-copy {
@@ -3128,7 +3155,7 @@ h2 {
     display: block;
     font-family: "Noto Sans JP", sans-serif;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.1em;
     margin-bottom: 10px;
     position: relative;
@@ -3151,11 +3178,17 @@ h2 {
 
 .details-service-copy p {
     color: #333;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 2;
     position: relative;
     z-index: 1;
+}
+
+.details-service-copy p strong{
+    font-family: "Noto Serif JP", serif;
+    font-size: 19px;
+    font-weight: 700;
 }
 
 .construction-service-photo.reveal-right {
@@ -3540,10 +3573,6 @@ h2 {
 .contact-complete-page {
     background: #fff;
     color: #123d48;
-}
-
-.contact-complete-page .site-header {
-    height: 75px;
 }
 
 .complete-hero {
@@ -3995,10 +4024,6 @@ h2 {
 .sports-page {
     background: #fff;
     color: #123d48;
-}
-
-.sports-page .site-header {
-    height: 75px;
 }
 
 .sports-hero-bg {
@@ -4720,10 +4745,6 @@ h2 {
     color: #123d48;
 }
 
-.project-detail-page .site-header {
-    height: 75px;
-}
-
 .projects-hero-bg {
     background-color: #fff0d8;
 }
@@ -4809,13 +4830,13 @@ h2 {
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.72);
     display: grid;
-    gap: 52px;
-    grid-template-columns: 170px 1fr;
+    gap: 50px;
+    grid-template-columns: 130px 1fr;
     min-height: 74px;
 }
 
 .project-spec dt {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 15px;
@@ -4824,7 +4845,7 @@ h2 {
 .project-spec dd {
     font-weight: 400;
     margin: 0;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5;
 }
 
@@ -5193,10 +5214,6 @@ h2 {
 .projects-page {
     background: #fff;
     color: #123d48;
-}
-
-.projects-page .site-header {
-    height: 75px;
 }
 
 .projects-hero {
@@ -5690,12 +5707,17 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    padding: 120px 0;
+    padding: 120px 0 0px;
 }
 
 .greeting-image {
     position: relative;
     margin-left: calc(-1 * (100vw - 1220px) / 2 - 34px);
+}
+
+.greeting-content{
+    position: relative;
+    top: -90px;
 }
 
 .greeting-content span {
@@ -5801,8 +5823,8 @@ h2 {
 
 .philo-item h3 {
     font-family: "Noto Serif JP", serif;
-    color: var(--teal);
-    font-size: 1.2rem;
+    color: #1CA8CB;
+    font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 16px;
@@ -5835,7 +5857,7 @@ h2 {
 /* HISTORY */
 .company-history {
     background-color: #fff4d0;
-    padding: 50px 0px 100px;
+    padding: 0px 0px 100px;
 }
 
 .timeline {
@@ -5912,7 +5934,7 @@ h2 {
 /* COMPANY OVERVIEW */
 .overview-section {
     background-color: var(--teal-soft);
-    padding: 100px 0 50px;
+    padding: 50px 0 50px;
 }
 .overview-inner {
     display: grid;
@@ -5987,13 +6009,14 @@ h2 {
 .overview-section .company-title h2 {
     margin-bottom: 0px;
 }
+.bg-yellow {
+    background-color: #fff4d0;
+}
 .company-history-bg {
     background: url(../images/map-bg.png) center bottom / 100% no-repeat;
-    background-color: #fff4d0;
-    padding: 60px 0 150px;
+    padding: 0px 0 150px;
     overflow: hidden;
     position: relative;
-    margin-bottom: 50px;
 }
 .dual-photo-stack {
     position: relative;
@@ -6022,12 +6045,8 @@ h2 {
     box-shadow: -2px 4px 7px 0px #0000003b;
 }
 
-.recruit-page .site-header {
-    height: 75px;
-}
-
 .recruit-page .construction-service-grid {
-    padding-top: 100px !important;
+    padding-top: 50px !important;
 }
 
 .recruit-page .construction-services {
@@ -6661,7 +6680,7 @@ h2 {
     font-family: "Noto Sans JP", sans-serif;
 }
 
-.contact-grid {
+.phone-contact-grid {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
