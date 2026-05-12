@@ -1,5 +1,5 @@
 :root {
-    --teal: #1CA8CB;
+    --teal: #1ca8cb;
     --teal-dark: #123f4a;
     --teal-soft: #e5f4f7;
     --aqua: #86d0dc;
@@ -18,6 +18,8 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -26,11 +28,13 @@ body {
     font-family: "Noto Sans JP", sans-serif;
     line-height: 1.8;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -410,7 +414,7 @@ h2 {
 
 .feature-title::before {
     width: 250px;
-    inset: -210px 75px -20px;
+    inset: -210px 110px -20px;
 }
 
 .service-cards {
@@ -607,7 +611,7 @@ h2 {
 
 .feature-photo {
     position: relative;
-    margin-right: calc(-1 * (100vw - 1220px) / 2 - 34px);
+    /* margin-right: calc(-1 * (100vw - 1220px) / 2 - 34px); */
 }
 
 .feature-photo::before {
@@ -1491,7 +1495,7 @@ h2 {
 }
 
 .ins-number {
-    color: #BEE3EC;
+    color: #bee3ec;
     display: block;
     font-family: "Noto Sans JP", serif;
     font-size: 72px;
@@ -1522,7 +1526,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.ins-copy p{
+.ins-copy p {
     color: #333;
     font-size: 18px;
     font-weight: 400;
@@ -3185,7 +3189,7 @@ h2 {
     z-index: 1;
 }
 
-.details-service-copy p strong{
+.details-service-copy p strong {
     font-family: "Noto Serif JP", serif;
     font-size: 19px;
     font-weight: 700;
@@ -5715,7 +5719,7 @@ h2 {
     margin-left: calc(-1 * (100vw - 1220px) / 2 - 34px);
 }
 
-.greeting-content{
+.greeting-content {
     position: relative;
     top: -90px;
 }
@@ -5823,7 +5827,7 @@ h2 {
 
 .philo-item h3 {
     font-family: "Noto Serif JP", serif;
-    color: #1CA8CB;
+    color: #1ca8cb;
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.5;
@@ -6796,4 +6800,2556 @@ h2 {
 .project-card:hover .project-image img {
     box-shadow: 1px 1px 7px #00000063;
     transition: 0.3s ease;
+}
+
+/* Mobile fixes: business-contents.html and cellulose-fiber.html */
+@media (max-width: 900px) {
+    .construction-page .construction-hero,
+    .insulation-page .ins-hero {
+        height: 520px;
+        margin-top: 90px;
+        background-position: center;
+    }
+
+    .construction-page .construction-lead,
+    .insulation-page .ins-intro {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .construction-page .message-grid,
+    .construction-page .construction-service-grid,
+    .construction-page .construction-service-grid.reverse,
+    .insulation-page .ins-split,
+    .insulation-page .process-grid,
+    .insulation-page .merit-grid,
+    .insulation-page .public-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 52px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .construction-page .construction-service-grid.reverse .construction-service-photo,
+    .insulation-page .process-photo,
+    .insulation-page .public-photo {
+        margin-right: 0;
+    }
+
+    .construction-page .construction-service-grid.last {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .construction-page .message-catch {
+        display: block;
+        writing-mode: horizontal-tb;
+        text-align: center;
+        line-height: 1.8;
+    }
+
+    .construction-page .message-catch span {
+        display: inline;
+    }
+
+    .construction-page .details-service-copy,
+    .construction-page .message-copy,
+    .insulation-page .ins-copy,
+    .insulation-page .process-copy,
+    .insulation-page .merit-copy,
+    .insulation-page .public-copy {
+        max-width: none;
+        width: 100%;
+    }
+
+    .construction-page .construction-services,
+    .insulation-page .ins-process,
+    .insulation-page .ins-merits,
+    .insulation-page .ins-public {
+        overflow: hidden;
+    }
+
+    .insulation-page .feature-list {
+        gap: 28px;
+    }
+
+    .insulation-page .feature-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .insulation-page .feature-row > span {
+        grid-column: auto;
+    }
+
+    .construction-page .contact-grid,
+    .insulation-page .contact-grid,
+    .construction-page .footer-grid,
+    .insulation-page .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .construction-page .contact-band,
+    .insulation-page .contact-band {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .construction-page .footer-nav,
+    .insulation-page .footer-nav {
+        justify-self: start;
+        top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .construction-page .construction-hero,
+    .insulation-page .ins-hero {
+        height: 430px;
+        margin-top: 62px;
+    }
+
+    .construction-page .construction-hero h1,
+    .insulation-page .ins-hero h1 {
+        font-size: 30px;
+        line-height: 1.45;
+        padding: 0 20px;
+    }
+
+    .construction-page .construction-hero p,
+    .insulation-page .ins-hero p {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 0 20px;
+    }
+
+    .construction-page .construction-lead {
+        padding: 50px 20px 70px;
+    }
+
+    .construction-page .construction-title h2,
+    .insulation-page .ins-title h2,
+    .construction-page .details-service-copy h2,
+    .construction-page .message-copy h2,
+    .insulation-page .ins-copy h2,
+    .insulation-page .process-copy h2,
+    .insulation-page .merit-copy h2,
+    .insulation-page .public-copy h2,
+    .insulation-page .ins-feature-title h2 {
+        font-size: 27px;
+        line-height: 1.45;
+    }
+
+    .construction-page .construction-summary,
+    .construction-page .details-service-copy p,
+    .construction-page .message-copy p,
+    .insulation-page .ins-copy p,
+    .insulation-page .process-copy p,
+    .insulation-page .merit-copy li,
+    .insulation-page .public-copy li,
+    .insulation-page .feature-row p,
+    .insulation-page .feature-row span {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .construction-page .president-message {
+        padding: 78px 0;
+    }
+
+    .construction-page .message-grid,
+    .construction-page .construction-service-grid,
+    .construction-page .construction-service-grid.reverse,
+    .construction-page .construction-service-grid.last,
+    .insulation-page .ins-split,
+    .insulation-page .process-grid,
+    .insulation-page .merit-grid,
+    .insulation-page .public-grid {
+        gap: 34px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .construction-page .construction-services {
+        padding-top: 62px;
+    }
+
+    .construction-page .construction-service-grid {
+        margin-bottom: 82px;
+    }
+
+    .construction-page .construction-service-grid.last {
+        padding-bottom: 86px;
+    }
+
+    .construction-page .construction-num,
+    .insulation-page .ins-number {
+        font-size: 58px;
+        top: -46px;
+    }
+
+    .construction-page .construction-service-photo img,
+    .insulation-page .ins-photo img,
+    .insulation-page .process-photo img,
+    .insulation-page .merit-photo img,
+    .insulation-page .public-photo img {
+        border-radius: 0 0 34% 0 / 0 0 8% 0;
+    }
+
+    .insulation-page .ins-intro {
+        padding: 58px 20px 88px;
+    }
+
+    .insulation-page .ins-about {
+        padding: 54px 0 78px;
+    }
+
+    .insulation-page .ins-features {
+        padding: 64px 0 95px;
+    }
+
+    .insulation-page .ins-feature-title {
+        max-width: calc(100% - 40px);
+        margin-bottom: 52px;
+    }
+
+    .insulation-page .feature-list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .insulation-page .ins-process,
+    .insulation-page .ins-merits,
+    .insulation-page .ins-public {
+        padding-top: 72px;
+        padding-bottom: 88px;
+    }
+
+    .construction-page .contact-band,
+    .insulation-page .contact-band {
+        padding: 60px 22px 110px;
+    }
+
+    .construction-page .contact-item,
+    .insulation-page .contact-item {
+        align-items: flex-start;
+    }
+
+    .construction-page .contact-text .number,
+    .insulation-page .contact-text .number {
+        font-size: 24px;
+    }
+
+    .construction-page .site-footer,
+    .insulation-page .site-footer {
+        padding: 92px 22px 30px;
+    }
+
+    .construction-page .footer-nav,
+    .insulation-page .footer-nav {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .construction-page .footer-col-right,
+    .insulation-page .footer-col-right {
+        align-items: flex-start;
+    }
+
+    .construction-page .footer-col-right a,
+    .insulation-page .footer-col-right a {
+        text-align: left;
+    }
+}
+
+/* Homepage responsive refinements */
+@media (max-width: 1200px) {
+    .home-page .about-grid,
+    .home-page .feature-grid,
+    .home-page .contact-grid,
+    .home-page .footer-grid {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .home-page .service-cards {
+        gap: 24px;
+    }
+
+    .home-page .cad-copy {
+        left: 58px;
+        max-width: 52%;
+        top: 64px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-page .hero {
+        min-height: 720px;
+        margin-top: 90px;
+    }
+
+    .home-page .hero h1 {
+        font-size: clamp(40px, 8vw, 64px);
+        line-height: 1.45;
+        padding: 0 24px;
+    }
+
+    .home-page .about {
+        padding: 110px 0 90px;
+    }
+
+    .home-page .about-grid,
+    .home-page .feature-grid,
+    .home-page .contact-grid,
+    .home-page .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-page .about-photo {
+        margin-left: 0;
+    }
+
+    .home-page .section-copy,
+    .home-page .feature-copy {
+        margin: 0 auto;
+        max-width: 680px;
+    }
+
+    .home-page .section-icon {
+        right: 10px;
+        top: -40px;
+        width: 110px;
+    }
+
+    .home-page .services {
+        background-position: center top;
+        padding: 90px 0 180px;
+    }
+
+    .home-page .section-title {
+        margin: -60px auto 70px;
+    }
+
+    .home-page .brush-icon {
+        left: 50%;
+        top: 12px;
+        transform: translateX(-160px) rotate(45deg);
+        width: 90px;
+    }
+
+    .home-page .service-cards,
+    .home-page .news-list {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+    }
+
+    .home-page .service-card {
+        min-height: 460px;
+    }
+
+    .home-page .service-card img {
+        max-height: 390px;
+    }
+
+    .home-page .cad {
+        padding: 80px 24px 120px;
+    }
+
+    .home-page .cad-panel {
+        background: #e5f4f7;
+        border: 2px solid var(--gold);
+        min-height: auto;
+        padding: 38px 28px;
+    }
+
+    .home-page .cad-panel img {
+        border-radius: 12px;
+        margin-bottom: 28px;
+        opacity: 0.75;
+    }
+
+    .home-page .cad-copy {
+        left: auto;
+        max-width: none;
+        position: static;
+        top: auto;
+    }
+
+    .home-page .feature {
+        padding: 20px 0 100px;
+    }
+
+    .home-page .feature::before {
+        background-size: 110px auto;
+        background-position: calc(100% - 30px) 0;
+    }
+
+    .home-page .feature-title {
+        margin-bottom: 80px;
+        max-width: calc(100% - 40px);
+    }
+
+    .home-page .feature-photo {
+        margin-right: 0;
+    }
+
+    .home-page .float-right {
+        float: none;
+    }
+
+    .home-page .recruit {
+        padding: 100px 24px 130px;
+    }
+
+    .home-page .news {
+        padding: 120px 24px 70px;
+    }
+
+    .home-page .news-list {
+        margin-top: 80px;
+        gap: 50px;
+    }
+
+    .home-page .news-more {
+        justify-content: center;
+    }
+
+    .home-page .contact-band {
+        margin-bottom: -140px;
+        padding: 70px 34px 130px;
+    }
+
+    .home-page .contact-grid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-page .contact-actions {
+        gap: 28px;
+    }
+
+    .home-page .site-footer {
+        padding: 160px 34px 32px;
+    }
+
+    .home-page .footer-nav {
+        justify-self: start;
+        top: 0;
+    }
+    .copyright {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-page .site-header {
+        height: 62px;
+    }
+
+    .home-page .logo img {
+        height: 30px;
+    }
+
+    .home-page .hero {
+        background-position: 55% bottom;
+        min-height: 520px;
+        margin-top: 62px;
+    }
+
+    .home-page .hero h1 {
+        font-size: 34px;
+        line-height: 1.55;
+        text-shadow:
+            -1px -1px 0 #e8e8e8,
+            1px -1px 0 #e8e8e8,
+            -1px 1px 0 #e8e8e8,
+            1px 1px 0 #e8e8e8,
+            2px 4px 6px rgba(0, 0, 0, 0.28);
+    }
+
+    .home-page .about {
+        padding: 80px 0 70px;
+    }
+
+    .home-page .about-grid,
+    .home-page .feature-grid,
+    .home-page .footer-grid {
+        gap: 38px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .home-page .section-copy h2,
+    .home-page .feature-title h2,
+    .home-page .section-title h2,
+    .home-page .cad-copy h2 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .home-page .section-copy p,
+    .home-page .feature-copy p,
+    .home-page .cad-copy p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .home-page .section-icon {
+        display: none;
+    }
+
+    .home-page .services {
+        padding: 80px 0 120px;
+    }
+
+    .home-page .section-title {
+        margin: -35px auto 54px;
+    }
+
+    .home-page .content-title {
+        margin-bottom: 22px;
+    }
+
+    .home-page .brush-icon {
+        left: 22px;
+        top: 0;
+        transform: rotate(45deg);
+        width: 70px;
+    }
+
+    .home-page .service-cards {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .home-page .service-card {
+        border-radius: 20px;
+        min-height: 400px;
+        padding: 16px 0 26px 20px;
+    }
+
+    .home-page .service-card h3 {
+        font-size: 17px;
+        margin-right: 54px;
+    }
+
+    .home-page .service-num {
+        height: 64px;
+        left: 18px;
+        padding: 19px 12px;
+        top: 52px;
+        width: 64px;
+    }
+
+    .home-page .service-num span {
+        font-size: 26px;
+        letter-spacing: 6px;
+    }
+
+    .home-page .service-card-copy {
+        bottom: 34px;
+        left: 8px;
+        padding: 18px;
+        width: 80%;
+    }
+
+    .home-page .cad {
+        padding: 64px 18px 90px;
+    }
+
+    .home-page .cad-panel {
+        padding: 28px 20px;
+    }
+
+    .home-page .feature-title {
+        margin-bottom: 58px;
+    }
+
+    .home-page .line-icon {
+        width: 140px;
+    }
+
+    .home-page .recruit {
+        min-height: 0;
+        padding: 74px 18px 95px;
+    }
+
+    .home-page .recruit-border {
+        padding: 36px 22px;
+    }
+
+    .home-page .recruit-card {
+        padding: 12px;
+    }
+
+    .home-page .recruit-card::after {
+        height: 82px;
+        right: -2px;
+        top: -18px;
+        width: 82px;
+    }
+
+    .home-page .news {
+        padding: 90px 18px 64px;
+    }
+
+    .home-page .news-list {
+        margin-top: 65px;
+    }
+
+    .home-page .news .section-title {
+        margin-bottom: 70px;
+        margin-top: -50px;
+    }
+
+    .home-page .contact-band {
+        padding: 60px 22px 110px;
+    }
+
+    .home-page .contact-band span {
+        margin-bottom: 36px;
+    }
+
+    .home-page .contact-item {
+        align-items: flex-start;
+    }
+
+    .home-page .contact-text .number {
+        font-size: 24px;
+    }
+
+    .home-page .site-footer {
+        padding: 200px 22px 30px;
+    }
+
+    .home-page .footer-grid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-page .footer-nav {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .home-page .footer-col-right {
+        align-items: flex-start;
+    }
+
+    .home-page .footer-col-right a {
+        text-align: left;
+    }
+
+    .home-page .copyright {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+    .feature-title::before {
+        width: 250px;
+        inset: -177px 10px -20px;
+    }
+    .feature::before{
+        display: none;
+    }
+}
+
+/* Mobile fixes: company.html */
+@media (max-width: 900px) {
+    .company-page {
+        overflow-x: hidden;
+    }
+
+    .company-page .company-hero {
+        height: 460px;
+        margin-top: 68px;
+        background-position: center center;
+    }
+
+    .company-page .company-greeting {
+        display: block;
+        background-size: cover;
+    }
+
+    .company-page .greeting-grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+        padding: 82px 24px 56px;
+    }
+
+    .company-page .greeting-image {
+        margin-left: 0;
+        width: min(100%, 620px);
+        margin-inline: auto;
+    }
+
+    .company-page .greeting-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .company-page .greeting-content {
+        top: 0;
+        max-width: 680px;
+        margin-inline: auto;
+    }
+
+    .company-page .company-philosophy {
+        padding: 72px 24px 92px;
+        background-position: center center;
+    }
+
+    .company-page .company-title h2 {
+        margin-bottom: 56px;
+    }
+
+    .company-page .philosophy-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        max-width: 680px;
+        margin-inline: auto;
+    }
+
+    .company-page .overview-section {
+        padding: 64px 24px 42px;
+    }
+
+    .company-page .overview-inner {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        max-width: 760px;
+        margin-inline: auto;
+    }
+
+    .company-page .overview-heading {
+        position: static;
+    }
+
+    .company-page .overview-table {
+        table-layout: fixed;
+    }
+
+    .company-page .overview-table td:first-child {
+        width: 150px;
+    }
+
+    .company-page .company-history-bg {
+        padding: 0 24px 96px;
+        background-size: cover;
+    }
+
+    .company-page .company-history {
+        padding-bottom: 74px;
+    }
+
+    .company-page .timeline {
+        max-width: 680px;
+    }
+
+    .company-page .timeline-item {
+        grid-template-columns: 140px 1fr;
+        gap: 24px;
+        min-height: 0;
+        padding: 18px 0;
+    }
+
+    .company-page .timeline-item .tl-year,
+    .company-page .timeline-item .tl-text,
+    .company-page .tl-left,
+    .company-page .tl-right,
+    .company-page .tl-year.tl-left,
+    .company-page .tl-year.tl-right {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .company-page .timeline-item .tl-year {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .company-page .timeline-item .tl-text {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .company-page .contact-grid,
+    .company-page .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .company-page .footer-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .company-page .company-hero {
+        height: 420px;
+        margin-top: 64px;
+    }
+
+    .company-page .company-hero .hero-copy h1 {
+        font-size: clamp(30px, 9vw, 42px);
+        letter-spacing: 0.12em;
+        line-height: 1.35;
+    }
+
+    .company-page .company-hero .hero-copy p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .company-page .greeting-grid {
+        padding: 58px 18px 44px;
+        gap: 30px;
+    }
+
+    .company-page .greeting-content span {
+        font-size: 24px;
+    }
+
+    .company-page .greeting-content h2 {
+        font-size: clamp(24px, 7vw, 32px);
+        line-height: 1.45;
+    }
+
+    .company-page .greeting-content p,
+    .company-page .philo-item p,
+    .company-page .overview-heading p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .company-page .president-name {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .company-page .company-philosophy {
+        padding: 58px 18px 74px;
+    }
+
+    .company-page .company-title h2,
+    .company-page .overview-heading h2 {
+        font-size: 28px;
+    }
+
+    .company-page .company-title h2 {
+        margin-bottom: 42px;
+    }
+
+    .company-page .philosophy-grid {
+        gap: 28px;
+    }
+
+    .company-page .philo-item h3 {
+        font-size: 1.12rem;
+    }
+
+    .company-page .overview-section {
+        padding: 54px 18px 34px;
+    }
+
+    .company-page .overview-table,
+    .company-page .overview-table tbody,
+    .company-page .overview-table tr,
+    .company-page .overview-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .company-page .overview-table tr {
+        padding: 16px 0;
+    }
+
+    .company-page .overview-table td {
+        padding: 0;
+    }
+
+    .company-page .overview-table td:first-child {
+        width: 100%;
+        padding: 0 0 8px;
+        font-size: 15px;
+    }
+
+    .company-page .overview-table td:last-child {
+        font-size: 15px;
+        line-height: 1.75;
+        overflow-wrap: anywhere;
+    }
+
+    .company-page .overview-section .company-title {
+        margin-top: 56px;
+    }
+
+    .company-page .bg-yellow {
+        display: none;
+    }
+
+    .company-page .company-history-bg {
+        padding: 54px 18px 74px;
+    }
+
+    .company-page .company-history {
+        padding-bottom: 0;
+    }
+
+    .company-page .timeline {
+        gap: 18px;
+    }
+
+    .company-page .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 0 0 24px;
+        border-bottom: 1px dashed rgba(26, 50, 99, 0.28);
+    }
+
+    .company-page .timeline-item:last-child {
+        border-bottom: 0;
+    }
+
+    .company-page .timeline-item .tl-year,
+    .company-page .timeline-item .tl-text {
+        grid-column: 1;
+    }
+
+    .company-page .timeline-item .tl-year {
+        grid-row: 1;
+    }
+
+    .company-page .timeline-item .tl-text {
+        grid-row: 2;
+    }
+
+    .company-page .tl-year h3 {
+        font-size: 44px;
+        letter-spacing: 3px;
+    }
+
+    .company-page .tl-year h3::after {
+        width: 72px;
+    }
+
+    .company-page .tl-text {
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: 0;
+    }
+
+    .company-page .contact-grid {
+        padding-inline: 20px;
+    }
+
+    .company-page .contact-actions {
+        gap: 18px;
+    }
+
+    .company-page .contact-item {
+        align-items: flex-start;
+    }
+
+    .company-page .footer-grid {
+        padding-inline: 22px;
+    }
+
+    .company-page .footer-nav {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .company-page .site-footer .copyright {
+        padding-inline: 20px;
+    }
+}
+
+/* Mobile fixes: construction-results.html and construction-results-detail.html */
+@media (max-width: 900px) {
+    .projects-page,
+    .project-detail-page {
+        overflow-x: hidden;
+    }
+
+    .projects-page .materials-hero,
+    .projects-page .projects-hero,
+    .project-detail-page .project-detail-hero {
+        height: 460px;
+        margin-top: 68px;
+        background-position: center center;
+    }
+
+    .projects-page .hero-copy,
+    .project-detail-page .hero-copy {
+        max-width: min(86vw, 720px);
+        transform: none;
+    }
+
+    .projects-page .hero-copy h1,
+    .project-detail-page .hero-copy h1 {
+        line-height: 1.25;
+    }
+
+    .projects-page .hero-copy p,
+    .project-detail-page .hero-copy p {
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+    }
+
+    .projects-page .projects-index {
+        padding: 70px 0 112px;
+    }
+
+    .projects-page .projects-tabs {
+        flex-direction: column;
+        gap: 42px;
+        margin-bottom: 76px;
+    }
+
+    .projects-page .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 58px;
+        max-width: 640px;
+        padding-inline: 24px;
+    }
+
+    .projects-page .project-card p {
+        max-width: none;
+    }
+
+    .project-detail-page .project-detail-body {
+        padding: 72px 24px 112px;
+    }
+
+    .project-detail-page .project-detail-heading {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 54px;
+        max-width: 760px;
+    }
+
+    .project-detail-page .project-detail-main {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        max-width: 760px;
+        margin-inline: auto;
+        margin-bottom: 46px;
+    }
+
+    .project-detail-page .project-spec {
+        padding: 42px;
+    }
+
+    .project-detail-page .project-gallery {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        max-width: 760px;
+        margin-inline: auto;
+    }
+
+    .projects-page .contact-grid,
+    .project-detail-page .contact-grid,
+    .projects-page .footer-grid,
+    .project-detail-page .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .projects-page .footer-nav,
+    .project-detail-page .footer-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .projects-page .materials-hero,
+    .projects-page .projects-hero,
+    .project-detail-page .project-detail-hero {
+        height: 420px;
+        margin-top: 64px;
+    }
+
+    .projects-page .hero-copy,
+    .project-detail-page .hero-copy {
+        max-width: calc(100vw - 36px);
+        padding-inline: 0;
+    }
+
+    .projects-page .hero-copy h1,
+    .project-detail-page .hero-copy h1 {
+        font-size: clamp(30px, 9vw, 42px);
+        letter-spacing: 0.12em;
+    }
+
+    .projects-page .hero-copy p,
+    .project-detail-page .hero-copy p {
+        font-size: 15px;
+        padding-inline: 0;
+    }
+
+    .projects-page .projects-index {
+        padding: 58px 0 84px;
+    }
+
+    .projects-page .projects-tabs {
+        align-items: stretch;
+        gap: 28px;
+        margin-bottom: 58px;
+        padding-inline: 28px;
+    }
+
+    .projects-page .projects-tabs a {
+        font-size: 20px;
+        line-height: 1.35;
+        text-align: center;
+    }
+
+    .projects-page .projects-tabs a::after {
+        bottom: -16px;
+        height: 12px;
+        width: 12px;
+    }
+
+    .projects-page .projects-grid {
+        gap: 46px;
+        padding-inline: 18px;
+    }
+
+    .projects-page .project-image {
+        margin-bottom: 22px;
+    }
+
+    .projects-page .project-image img {
+        aspect-ratio: 1.1 / 1;
+    }
+
+    .projects-page .project-image span {
+        font-size: 11px;
+        min-width: 118px;
+        padding: 8px 12px;
+        right: 12px;
+        top: 12px;
+    }
+
+    .projects-page .project-meta {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .projects-page .project-meta time::after {
+        margin-left: 12px;
+        width: 42px;
+    }
+
+    .projects-page .project-card h2 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .projects-page .project-card p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .project-detail-page .project-detail-body {
+        padding: 56px 18px 84px;
+    }
+
+    .project-detail-page .project-detail-heading {
+        gap: 18px;
+        margin-bottom: 36px;
+    }
+
+    .project-detail-page .project-detail-heading span {
+        border-radius: 999px;
+        font-size: 12px;
+        padding: 11px 18px;
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .project-detail-page .project-detail-heading h2 {
+        font-size: clamp(26px, 7.5vw, 34px);
+        line-height: 1.35;
+    }
+
+    .project-detail-page .project-main-image img,
+    .project-detail-page .project-gallery img {
+        border-radius: 16px;
+    }
+
+    .project-detail-page .project-spec {
+        border-radius: 20px;
+        padding: 26px 20px;
+    }
+
+    .project-detail-page .project-spec div {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+        padding: 18px 0;
+    }
+
+    .project-detail-page .project-spec dt {
+        font-size: 15px;
+        letter-spacing: 0.08em;
+    }
+
+    .project-detail-page .project-spec dd {
+        font-size: 15px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    .project-detail-page .project-gallery {
+        gap: 20px;
+    }
+
+    .projects-page .contact-grid,
+    .project-detail-page .contact-grid {
+        padding-inline: 20px;
+    }
+
+    .projects-page .contact-actions,
+    .project-detail-page .contact-actions {
+        gap: 18px;
+    }
+
+    .projects-page .contact-item,
+    .project-detail-page .contact-item {
+        align-items: flex-start;
+    }
+
+    .projects-page .footer-grid,
+    .project-detail-page .footer-grid {
+        padding-inline: 22px;
+    }
+
+    .projects-page .footer-nav,
+    .project-detail-page .footer-nav {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .projects-page .site-footer .copyright,
+    .project-detail-page .site-footer .copyright {
+        padding-inline: 20px;
+    }
+}
+
+/* Mobile fixes: contact-us.html and contact-us-details.html */
+@media (max-width: 900px) {
+    .contact-form-page,
+    .contact-confirm-page {
+        overflow-x: hidden;
+    }
+
+    .contact-form-page .inquiry-hero,
+    .contact-confirm-page .contact-hero {
+        height: 460px;
+        margin-top: 68px;
+        background-position: center center;
+    }
+
+    .contact-form-page .hero-copy,
+    .contact-confirm-page .hero-copy {
+        max-width: min(86vw, 720px);
+    }
+
+    .contact-form-page .hero-copy h1,
+    .contact-confirm-page .hero-copy h1 {
+        line-height: 1.25;
+    }
+
+    .contact-form-page .hero-copy p,
+    .contact-confirm-page .hero-copy p {
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-form-page .form-header-section,
+    .contact-confirm-page .form-header-section {
+        padding: 64px 24px 42px;
+    }
+
+    .contact-form-page .form-lead,
+    .contact-confirm-page .form-lead {
+        max-width: 720px;
+        margin-inline: auto;
+    }
+
+    .contact-form-page .notice-box {
+        display: block;
+        max-width: 720px;
+        padding: 32px;
+        margin-inline: auto;
+    }
+
+    .contact-form-page .contact-form-main {
+        max-width: 760px;
+        margin: 24px auto 96px;
+        padding-inline: 24px;
+    }
+
+    .contact-form-page .form-row {
+        gap: 18px;
+    }
+
+    .contact-form-page .form-label {
+        width: 230px;
+    }
+
+    .contact-form-page .radio-label {
+        margin-right: 24px;
+    }
+
+    .contact-form-page .blue-wave-bg {
+        padding: 86px 24px 92px;
+        background-position: center center;
+    }
+
+    .contact-form-page .blue-wave-content p {
+        width: auto;
+        max-width: 760px;
+        text-align: left;
+    }
+
+    .contact-confirm-page .contact-methods {
+        display: block;
+        margin-top: -96px;
+        padding: 136px 24px 86px;
+    }
+
+    .contact-confirm-page .phone-contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 34px;
+    }
+
+    .contact-confirm-page .contact-col {
+        max-width: none;
+    }
+
+    .contact-confirm-page .confirm-section {
+        padding: 86px 24px 96px;
+        background-size: cover;
+    }
+
+    .contact-confirm-page .confirm-row {
+        max-width: 760px;
+    }
+
+    .contact-confirm-page .confirm-label {
+        width: 220px;
+        font-size: 19px;
+    }
+
+    .contact-form-page .inquiry-body,
+    .contact-confirm-page .inquiry-body {
+        padding: 74px 24px 104px;
+    }
+
+    .contact-form-page .contact-grid,
+    .contact-confirm-page .contact-grid,
+    .contact-form-page .footer-grid,
+    .contact-confirm-page .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .contact-form-page .footer-nav,
+    .contact-confirm-page .footer-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-form-page .inquiry-hero,
+    .contact-confirm-page .contact-hero {
+        height: 420px;
+        margin-top: 64px;
+    }
+
+    .contact-form-page .hero-copy,
+    .contact-confirm-page .hero-copy {
+        max-width: calc(100vw - 36px);
+    }
+
+    .contact-form-page .hero-copy h1,
+    .contact-confirm-page .hero-copy h1 {
+        font-size: clamp(30px, 9vw, 42px);
+        letter-spacing: 0.1em;
+    }
+
+    .contact-form-page .hero-copy p,
+    .contact-confirm-page .hero-copy p {
+        font-size: 15px;
+        padding-inline: 0;
+    }
+
+    .contact-form-page .form-header-section,
+    .contact-confirm-page .form-header-section {
+        padding: 54px 18px 32px;
+    }
+
+    .contact-form-page .inq-section-title-wrapper,
+    .contact-confirm-page .inq-section-title-wrapper {
+        margin-bottom: 26px;
+    }
+
+    .contact-form-page .inq-section-title,
+    .contact-confirm-page .inq-section-title {
+        font-size: 28px;
+        margin-inline: auto;
+    }
+
+    .contact-form-page .form-lead,
+    .contact-confirm-page .form-lead {
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 28px;
+    }
+
+    .contact-form-page .form-lead br,
+    .contact-confirm-page .form-lead br {
+        display: none;
+    }
+
+    .contact-form-page .notice-box {
+        border-radius: 14px;
+        padding: 22px 18px;
+        margin-bottom: 30px;
+    }
+
+    .contact-form-page .notice-list li {
+        font-size: 13px;
+        line-height: 1.9;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-form-page .contact-form-main {
+        margin: 10px auto 72px;
+        padding-inline: 18px;
+    }
+
+    .contact-form-page .form-row {
+        align-items: stretch;
+        gap: 10px;
+        padding: 18px 0;
+    }
+
+    .contact-form-page .form-label,
+    .contact-form-page .form-label.end {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 12px;
+        margin-bottom: 0;
+    }
+
+    .contact-form-page .form-input {
+        padding-right: 0;
+    }
+
+    .contact-form-page .form-input,
+    .contact-form-page .radio-label {
+        font-size: 14px;
+    }
+
+    .contact-form-page .first-row .form-input {
+        display: grid;
+        gap: 12px;
+    }
+
+    .contact-form-page .radio-label {
+        margin-right: 0;
+    }
+
+    .contact-form-page .zip-row {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .contact-form-page .input-zip {
+        flex: 1 1 84px;
+        min-width: 0;
+    }
+
+    .contact-form-page .input-note {
+        flex: 1 0 100%;
+        margin-left: 0;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .contact-form-page .select-pref {
+        width: 100%;
+    }
+
+    .contact-form-page .textarea-full {
+        height: 170px;
+    }
+
+    .contact-form-page .form-footer-note {
+        font-size: 12px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .contact-form-page .blue-wave-bg {
+        padding: 66px 18px 70px;
+        margin-bottom: 24px;
+    }
+
+    .contact-form-page .blue-wave-title h2 {
+        font-size: 22px;
+        line-height: 1.45;
+    }
+
+    .contact-form-page .blue-wave-content p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 18px;
+    }
+
+    .contact-confirm-page .contact-methods {
+        margin-top: -72px;
+        padding: 116px 18px 64px;
+    }
+
+    .contact-confirm-page .phone-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .contact-confirm-page .icon-circle-contact {
+        height: 66px;
+        width: 66px;
+    }
+
+    .contact-confirm-page .contact-col h3 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .contact-confirm-page .tel-number {
+        font-size: clamp(28px, 9vw, 36px);
+        overflow-wrap: anywhere;
+    }
+
+    .contact-confirm-page .mail-description br {
+        display: none;
+    }
+
+    .contact-confirm-page .confirm-section {
+        padding: 64px 18px 74px;
+        margin-bottom: 28px;
+    }
+
+    .contact-confirm-page .confirm-row {
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 16px 0;
+    }
+
+    .contact-confirm-page .confirm-label {
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 6px;
+    }
+
+    .contact-confirm-page .confirm-value {
+        width: 100%;
+        font-size: 14px;
+        min-height: 1.4em;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-form-page .inquiry-body,
+    .contact-confirm-page .inquiry-body {
+        padding: 58px 18px 82px;
+    }
+
+    .contact-form-page .complete-button,
+    .contact-confirm-page .complete-button {
+        width: min(100%, 320px);
+        min-width: 0;
+        font-size: 24px;
+        gap: 18px;
+        justify-content: space-between;
+        padding: 12px 14px 12px 34px;
+    }
+
+    .contact-form-page .complete-button span,
+    .contact-confirm-page .complete-button span {
+        flex: 0 0 48px;
+        height: 48px;
+        width: 48px;
+    }
+
+    .contact-form-page .contact-grid,
+    .contact-confirm-page .contact-grid {
+        padding-inline: 20px;
+    }
+
+    .contact-form-page .contact-actions,
+    .contact-confirm-page .contact-actions {
+        gap: 18px;
+    }
+
+    .contact-form-page .contact-item,
+    .contact-confirm-page .contact-item {
+        align-items: flex-start;
+    }
+
+    .contact-form-page .footer-grid,
+    .contact-confirm-page .footer-grid {
+        padding-inline: 22px;
+    }
+
+    .contact-form-page .footer-nav,
+    .contact-confirm-page .footer-nav {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .contact-form-page .site-footer .copyright,
+    .contact-confirm-page .site-footer .copyright {
+        padding-inline: 20px;
+    }
+}
+
+/* Mobile fixes: notice-lists.html and notice-details.html */
+@media (max-width: 900px) {
+    .news-page,
+    .news-detail-page {
+        overflow-x: hidden;
+    }
+
+    .news-page .news-hero,
+    .news-detail-page .detail-hero {
+        height: 460px;
+        margin-top: 68px;
+        background-position: center center;
+    }
+
+    .news-page .hero-copy,
+    .news-detail-page .hero-copy {
+        max-width: min(86vw, 720px);
+        transform: none;
+    }
+
+    .news-page .hero-copy h1,
+    .news-detail-page .hero-copy h1 {
+        line-height: 1.25;
+    }
+
+    .news-page .hero-copy p,
+    .news-detail-page .hero-copy p {
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+    }
+
+    .news-page .news-index {
+        padding: 70px 24px 112px;
+    }
+
+    .news-page .news-index-title {
+        margin-bottom: 58px;
+    }
+
+    .news-page .news-index-list {
+        max-width: 760px;
+        margin-bottom: 72px;
+    }
+
+    .news-page .news-index-item {
+        grid-template-columns: 150px 1fr;
+        gap: 28px;
+        min-height: 92px;
+        padding: 18px 0 18px 22px;
+    }
+
+    .news-page .news-index-item::before {
+        width: 150px;
+    }
+
+    .news-page .news-index-item time,
+    .news-page .news-index-item span {
+        font-size: 20px;
+        line-height: 1.55;
+    }
+
+    .news-detail-page .detail-body {
+        padding: 96px 24px 132px;
+    }
+
+    .news-detail-page .detail-card {
+        max-width: 760px;
+        padding: 58px 42px 62px;
+    }
+
+    .news-detail-page .detail-card h2 {
+        font-size: clamp(32px, 5vw, 42px);
+    }
+
+    .news-detail-page .detail-rule {
+        margin-bottom: 48px;
+    }
+
+    .news-detail-page .detail-map {
+        width: min(100%, 480px);
+    }
+
+    .news-detail-page .detail-message {
+        text-align: left;
+    }
+
+    .news-detail-page .detail-message p {
+        overflow-wrap: anywhere;
+    }
+
+    .news-detail-page .detail-message br {
+        display: none;
+    }
+
+    .news-page .contact-grid,
+    .news-detail-page .contact-grid,
+    .news-page .footer-grid,
+    .news-detail-page .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .news-page .footer-nav,
+    .news-detail-page .footer-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .news-page .news-hero,
+    .news-detail-page .detail-hero {
+        height: 420px;
+        margin-top: 64px;
+    }
+
+    .news-page .hero-copy,
+    .news-detail-page .hero-copy {
+        max-width: calc(100vw - 36px);
+        padding-inline: 0;
+    }
+
+    .news-page .hero-copy h1,
+    .news-detail-page .hero-copy h1 {
+        font-size: clamp(30px, 9vw, 42px);
+        letter-spacing: 0.1em;
+    }
+
+    .news-page .hero-copy p,
+    .news-detail-page .hero-copy p {
+        font-size: 15px;
+        padding-inline: 0;
+    }
+
+    .news-page .news-index {
+        padding: 54px 18px 82px;
+    }
+
+    .news-page .news-index-title {
+        margin-bottom: 42px;
+    }
+
+    .news-page .news-index-title h2 {
+        font-size: 31px;
+        line-height: 1.35;
+    }
+
+    .news-page .news-index-title h2::after {
+        margin-top: 20px;
+        width: 180px;
+    }
+
+    .news-page .news-index-list {
+        margin-bottom: 44px;
+    }
+
+    .news-page .news-index-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+        padding: 18px 0 18px 18px;
+    }
+
+    .news-page .news-index-item::before {
+        height: 6px;
+        width: 118px;
+    }
+
+    .news-page .news-index-item time {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .news-page .news-index-item span {
+        font-size: 17px;
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+    }
+
+    .news-detail-page .detail-body {
+        padding: 62px 18px 86px;
+    }
+
+    .news-detail-page .detail-card {
+        border-radius: 18px 18px 0 0;
+        padding: 32px 18px 42px;
+    }
+
+    .news-detail-page .detail-meta {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    .news-detail-page .detail-meta span {
+        font-size: 18px;
+        line-height: 1;
+        padding: 8px 18px 7px;
+    }
+
+    .news-detail-page .detail-meta time {
+        font-size: 15px;
+    }
+
+    .news-detail-page .detail-card h2 {
+        font-size: clamp(25px, 7vw, 32px);
+        line-height: 1.45;
+        margin-bottom: 22px;
+        overflow-wrap: anywhere;
+    }
+
+    .news-detail-page .detail-rule {
+        height: 14px;
+        margin-bottom: 30px;
+    }
+
+    .news-detail-page .detail-map {
+        margin-bottom: 34px;
+        width: 100%;
+    }
+
+    .news-detail-page .detail-message p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .news-page .contact-grid,
+    .news-detail-page .contact-grid {
+        padding-inline: 20px;
+    }
+
+    .news-page .contact-actions,
+    .news-detail-page .contact-actions {
+        gap: 18px;
+    }
+
+    .news-page .contact-item,
+    .news-detail-page .contact-item {
+        align-items: flex-start;
+    }
+
+    .news-page .footer-grid,
+    .news-detail-page .footer-grid {
+        padding-inline: 22px;
+    }
+
+    .news-page .footer-nav,
+    .news-detail-page .footer-nav {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .news-page .site-footer .copyright,
+    .news-detail-page .site-footer .copyright {
+        padding-inline: 20px;
+    }
+}
+
+/* Mobile fixes: recruitment.html and sales-of-business-materials.html */
+@media (max-width: 900px) {
+    .recruit-page,
+    .materials-sales-page {
+        overflow-x: hidden;
+    }
+
+    .recruit-page .recruit-hero,
+    .materials-sales-page .materials-hero {
+        height: 460px;
+        margin-top: 68px;
+        background-position: center center;
+    }
+
+    .recruit-page .hero-copy,
+    .materials-sales-page .hero-copy {
+        max-width: min(86vw, 720px);
+        transform: none;
+    }
+
+    .recruit-page .hero-copy h1,
+    .materials-sales-page .hero-copy h1 {
+        line-height: 1.25;
+    }
+
+    .recruit-page .hero-copy p,
+    .materials-sales-page .hero-copy p {
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+    }
+
+    .recruit-page .construction-service-grid,
+    .recruit-page .construction-service-grid.reverse,
+    .materials-sales-page .sports-service-grid,
+    .materials-sales-page .sports-service-grid.reverse {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding-inline: 24px;
+    }
+
+    .recruit-page .construction-service-grid.reverse .construction-service-photo,
+    .materials-sales-page .sports-service-photo.reveal-left,
+    .materials-sales-page .sports-service-photo.reveal-right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .recruit-page .construction-service-photo img,
+    .materials-sales-page .sports-service-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .recruit-page .dual-photo-stack {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .recruit-page .dual-photo-stack .photo-top,
+    .recruit-page .dual-photo-stack .photo-bottom {
+        position: static;
+        width: 100%;
+        aspect-ratio: 1.25 / 1;
+        object-fit: cover;
+    }
+
+    .recruit-page .benefits-section {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        padding: 70px 24px;
+        background-size: cover;
+    }
+
+    .recruit-page .benefits-grid {
+        bottom: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .recruit-page .benefit-card {
+        padding: 26px;
+    }
+
+    .recruit-page .benefit-card h3,
+    .recruit-page .benefit-card ul li {
+        font-size: 16px;
+    }
+
+    .recruit-page .recruit-info {
+        padding-inline: 24px;
+    }
+
+    .recruit-page .recruit-info-title h2 {
+        margin-bottom: 48px;
+    }
+
+    .recruit-page .recruit-table {
+        padding: 42px;
+    }
+
+    .recruit-page .recruit-row {
+        grid-template-columns: 150px 1fr;
+    }
+
+    .recruit-page .recruit-th,
+    .recruit-page .recruit-td {
+        font-size: 15px;
+    }
+
+    .recruit-page .sub-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .recruit-page .blue-banner {
+        width: 100%;
+        max-width: 760px;
+    }
+
+    .materials-sales-page .service-banner {
+        padding-inline: 24px;
+    }
+
+    .materials-sales-page .construction-summary {
+        max-width: 760px;
+        margin-inline: auto;
+    }
+
+    .materials-sales-page .sports-services {
+        padding: 76px 0 34px;
+    }
+
+    .materials-sales-page .construction-num {
+        font-size: clamp(58px, 14vw, 88px);
+    }
+
+    .recruit-page .contact-grid,
+    .materials-sales-page .contact-grid,
+    .recruit-page .footer-grid,
+    .materials-sales-page .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .recruit-page .footer-nav,
+    .materials-sales-page .footer-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .recruit-page .recruit-hero,
+    .materials-sales-page .materials-hero {
+        height: 420px;
+        margin-top: 64px;
+    }
+
+    .recruit-page .hero-copy,
+    .materials-sales-page .hero-copy {
+        max-width: calc(100vw - 36px);
+    }
+
+    .recruit-page .hero-copy h1,
+    .materials-sales-page .hero-copy h1 {
+        font-size: clamp(30px, 9vw, 42px);
+        letter-spacing: 0.1em;
+    }
+
+    .recruit-page .hero-copy p,
+    .materials-sales-page .hero-copy p {
+        font-size: 15px;
+        padding-inline: 0;
+    }
+
+    .recruit-page .construction-service-grid,
+    .recruit-page .construction-service-grid.reverse,
+    .materials-sales-page .sports-service-grid,
+    .materials-sales-page .sports-service-grid.reverse {
+        gap: 26px;
+        padding-inline: 18px;
+    }
+
+    .recruit-page .details-service-copy h2,
+    .materials-sales-page .details-service-copy h2 {
+        font-size: clamp(25px, 7vw, 32px);
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+    }
+
+    .recruit-page .details-service-copy p,
+    .materials-sales-page .details-service-copy p,
+    .materials-sales-page .construction-summary {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .recruit-page .dual-photo-stack {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .recruit-page .benefits-section {
+        margin-top: 32px;
+        margin-bottom: 54px;
+        padding: 54px 18px;
+    }
+
+    .recruit-page .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .recruit-page .benefit-card {
+        border-radius: 16px;
+        padding: 22px 18px;
+    }
+
+    .recruit-page .benefit-card h3 {
+        font-size: 15px;
+    }
+
+    .recruit-page .benefit-card ul li {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .recruit-page .recruit-info {
+        padding-inline: 18px;
+    }
+
+    .recruit-page .recruit-info-title h2 {
+        font-size: 28px;
+        margin-bottom: 34px;
+    }
+
+    .recruit-page .recruit-table {
+        padding: 22px 18px;
+    }
+
+    .recruit-page .recruit-row {
+        grid-template-columns: 1fr;
+    }
+
+    .recruit-page .recruit-th {
+        border-top: 1px solid #70707096;
+        padding: 18px 0 6px;
+    }
+
+    .recruit-page .recruit-td {
+        border-top: 0;
+        padding: 0 0 18px;
+        font-size: 14px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+
+    .recruit-page .recruit-contact {
+        padding: 56px 18px;
+    }
+
+    .recruit-page .blue-banner {
+        border-radius: 18px;
+        margin-bottom: 48px;
+        padding: 34px 18px;
+    }
+
+    .recruit-page .blue-banner h3,
+    .recruit-page .entry-title {
+        font-size: 20px;
+        line-height: 1.55;
+    }
+
+    .recruit-page .entry-subtext {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 28px;
+    }
+
+    .recruit-page .entry-buttons {
+        gap: 16px;
+    }
+
+    .recruit-page .btn-entry {
+        min-width: 0;
+        width: 100%;
+        padding: 10px 18px 10px 10px;
+    }
+
+    .recruit-page .btn-text {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .materials-sales-page .service-banner {
+        padding: 54px 18px 40px;
+    }
+
+    .materials-sales-page .construction-title h2 {
+        font-size: clamp(26px, 7.5vw, 34px);
+    }
+
+    .materials-sales-page .construction-title img {
+        max-width: 210px;
+    }
+
+    .materials-sales-page .sports-services {
+        padding-top: 56px;
+    }
+
+    .materials-sales-page .sports-service-photo img {
+        aspect-ratio: 1.18 / 1;
+    }
+
+    .materials-sales-page .construction-num {
+        font-size: 56px;
+        line-height: 1;
+    }
+
+    .recruit-page .contact-grid,
+    .materials-sales-page .contact-grid {
+        padding-inline: 20px;
+    }
+
+    .recruit-page .contact-actions,
+    .materials-sales-page .contact-actions {
+        gap: 18px;
+    }
+
+    .recruit-page .contact-item,
+    .materials-sales-page .contact-item {
+        align-items: flex-start;
+    }
+
+    .recruit-page .footer-grid,
+    .materials-sales-page .footer-grid {
+        padding-inline: 22px;
+    }
+
+    .recruit-page .footer-nav,
+    .materials-sales-page .footer-nav {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .recruit-page .site-footer .copyright,
+    .materials-sales-page .site-footer .copyright {
+        padding-inline: 20px;
+    }
+}
+
+/* Mobile fixes: sports-facilities.html and transmission-success.html */
+@media (max-width: 900px) {
+    .sports-page:not(.materials-sales-page),
+    .contact-complete-page {
+        overflow-x: hidden;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-hero,
+    .contact-complete-page .complete-hero {
+        height: 460px;
+        margin-top: 68px;
+        background-position: center center;
+    }
+
+    .sports-page:not(.materials-sales-page) .hero-copy,
+    .contact-complete-page .hero-copy {
+        max-width: min(86vw, 720px);
+        transform: none;
+    }
+
+    .sports-page:not(.materials-sales-page) .hero-copy h1,
+    .contact-complete-page .hero-copy h1 {
+        line-height: 1.25;
+    }
+
+    .sports-page:not(.materials-sales-page) .hero-copy p,
+    .contact-complete-page .hero-copy p {
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-mission {
+        padding: 72px 24px 88px;
+    }
+
+    .sports-page:not(.materials-sales-page) .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-service-grid,
+    .sports-page:not(.materials-sales-page) .sports-service-grid.reverse {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding-inline: 24px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-service-photo.reveal-left,
+    .sports-page:not(.materials-sales-page) .sports-service-photo.reveal-right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-service-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-commitment {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .sports-page:not(.materials-sales-page) .commitment-copy-container {
+        min-height: 0;
+    }
+
+    .sports-page:not(.materials-sales-page) .commitment-copy {
+        max-width: 760px;
+        padding: 92px 34px 74px;
+    }
+
+    .sports-page:not(.materials-sales-page) .commitment-photo {
+        min-height: 360px;
+    }
+
+    .sports-page:not(.materials-sales-page) .commitment-photo img {
+        min-height: 360px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-process {
+        padding: 96px 24px 104px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-process-grid {
+        grid-template-columns: 1fr;
+        max-width: 560px;
+    }
+
+    .contact-complete-page .complete-body {
+        padding: 82px 24px 118px;
+    }
+
+    .contact-complete-page .complete-panel {
+        max-width: 820px;
+        min-height: 0;
+        padding: 54px 44px;
+    }
+
+    .contact-complete-page .complete-panel p br {
+        display: none;
+    }
+
+    .sports-page:not(.materials-sales-page) .contact-grid,
+    .contact-complete-page .contact-grid,
+    .sports-page:not(.materials-sales-page) .footer-grid,
+    .contact-complete-page .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .sports-page:not(.materials-sales-page) .footer-nav,
+    .contact-complete-page .footer-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .sports-page:not(.materials-sales-page) .sports-hero,
+    .contact-complete-page .complete-hero {
+        height: 420px;
+        margin-top: 64px;
+    }
+
+    .sports-page:not(.materials-sales-page) .hero-copy,
+    .contact-complete-page .hero-copy {
+        max-width: calc(100vw - 36px);
+    }
+
+    .sports-page:not(.materials-sales-page) .hero-copy h1,
+    .contact-complete-page .hero-copy h1 {
+        font-size: clamp(30px, 9vw, 42px);
+        letter-spacing: 0.1em;
+    }
+
+    .sports-page:not(.materials-sales-page) .hero-copy p,
+    .contact-complete-page .hero-copy p {
+        font-size: 15px;
+        padding-inline: 0;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-mission {
+        padding: 54px 18px 70px;
+    }
+
+    .sports-page:not(.materials-sales-page) .mission-heading h2 {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+    .sports-page:not(.materials-sales-page) .mission-grid p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-services {
+        padding-top: 56px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-service-grid,
+    .sports-page:not(.materials-sales-page) .sports-service-grid.reverse {
+        gap: 26px;
+        margin-bottom: 58px;
+        padding-inline: 18px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-service-photo img {
+        aspect-ratio: 1.18 / 1;
+    }
+
+    .sports-page:not(.materials-sales-page) .details-service-copy h2 {
+        font-size: clamp(24px, 7vw, 31px);
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+    }
+
+    .sports-page:not(.materials-sales-page) .details-service-copy p,
+    .sports-page:not(.materials-sales-page) .commitment-copy p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .sports-page:not(.materials-sales-page) .construction-num {
+        font-size: 56px;
+        line-height: 1;
+    }
+
+    .sports-page:not(.materials-sales-page) .commitment-copy {
+        padding: 64px 18px 58px;
+    }
+
+    .sports-page:not(.materials-sales-page) .commitment-copy h2 {
+        font-size: 26px;
+        width: auto;
+    }
+
+    .sports-page:not(.materials-sales-page) .commitment-detail {
+        margin-top: 20px;
+    }
+
+    .sports-page:not(.materials-sales-page) .commitment-photo,
+    .sports-page:not(.materials-sales-page) .commitment-photo img {
+        min-height: 280px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-process {
+        padding: 72px 18px 82px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-process .process-title {
+        margin-bottom: 38px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-process .process-title h2 {
+        font-size: 30px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-process-card {
+        border-radius: 22px;
+        min-height: 0;
+        padding: 64px 22px 30px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-process-card span {
+        font-size: 44px;
+        right: 22px;
+        top: 28px;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-process-card h3 {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .sports-page:not(.materials-sales-page) .sports-process-card p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .contact-complete-page .complete-body {
+        padding: 58px 18px 82px;
+    }
+
+    .contact-complete-page .complete-panel {
+        padding: 34px 18px;
+    }
+
+    .contact-complete-page .complete-panel h2 {
+        font-size: 22px;
+        line-height: 1.6;
+        margin-bottom: 28px;
+    }
+
+    .contact-complete-page .complete-panel p {
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 24px;
+    }
+
+    .contact-complete-page .complete-button {
+        width: min(100%, 320px);
+        min-width: 0;
+        font-size: 24px;
+        gap: 18px;
+        justify-content: space-between;
+        margin-top: 48px;
+        padding: 12px 14px 12px 34px;
+    }
+
+    .contact-complete-page .complete-button span {
+        flex: 0 0 48px;
+        height: 48px;
+        width: 48px;
+    }
+
+    .sports-page:not(.materials-sales-page) .contact-grid,
+    .contact-complete-page .contact-grid {
+        padding-inline: 20px;
+    }
+
+    .sports-page:not(.materials-sales-page) .contact-actions,
+    .contact-complete-page .contact-actions {
+        gap: 18px;
+    }
+
+    .sports-page:not(.materials-sales-page) .contact-item,
+    .contact-complete-page .contact-item {
+        align-items: flex-start;
+    }
+
+    .sports-page:not(.materials-sales-page) .footer-grid,
+    .contact-complete-page .footer-grid {
+        padding-inline: 22px;
+    }
+
+    .sports-page:not(.materials-sales-page) .footer-nav,
+    .contact-complete-page .footer-nav {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .sports-page:not(.materials-sales-page) .site-footer .copyright,
+    .contact-complete-page .site-footer .copyright {
+        padding-inline: 20px;
+    }
 }
